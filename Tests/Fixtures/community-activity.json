@@ -1,0 +1,120 @@
+{
+  "page": 1,
+  "limit": 3,
+  "total": 11,
+  "has_next": true,
+  "filters": {
+    "q": "",
+    "user": "",
+    "media_type": "",
+    "status": ""
+  },
+  "items": [
+    {
+      "id": 24,
+      "body": "img(https://i.ibb.co/WpGw7TK2/a2aa3e570458.webp)\nmeow\n\n\n\nimg(https://i.ibb.co/C3b2RrT4/e720c5a57a2d.png)\nmeow moew meow",
+      "attachment": {
+        "url": "https://static.klipy.com/ii/e293a233a303a98e471f78d04e13a1b0/ad/20/l8ruwlQO.gif",
+        "preview_url": "https://static.klipy.com/ii/e293a233a303a98e471f78d04e13a1b0/ad/20/2tJkl4ZD.gif",
+        "title": "High School DxD Koneko Meow",
+        "source": "klipy"
+      },
+      "created_at": "2026-09-24T13:41:50+00:00",
+      "edited_at": null,
+      "user": {
+        "id": 1,
+        "username": "sample-user-1",
+        "display_name": "Sample User",
+        "avatar_url": null,
+        "role": "admin",
+        "store": {
+          "badge": "Asuna Fan",
+          "name_color": "#38bdf8",
+          "profile_frame": "rose",
+          "banner_aura": "rose"
+        }
+      },
+      "like_count": 1,
+      "user_liked": false,
+      "comment_count": 0,
+      "type": "activity",
+      "url": "/post/24",
+      "timestamps": {
+        "created_at": "2026-09-24T13:41:50+00:00"
+      },
+      "reactions": {
+        "likes": 1
+      },
+      "linked_item": null
+    },
+    {
+      "id": 22,
+      "body": "meow",
+      "attachment": null,
+      "created_at": "2026-08-01T19:17:32+00:00",
+      "edited_at": null,
+      "user": {
+        "id": 8,
+        "username": "sample-user-59",
+        "display_name": "Sample User",
+        "avatar_url": null,
+        "role": "mod",
+        "store": {
+          "badge": "Star King",
+          "name_color": "#38bdf8",
+          "profile_frame": "rose",
+          "banner_aura": "crystal-rain"
+        }
+      },
+      "like_count": 0,
+      "user_liked": false,
+      "comment_count": 0,
+      "type": "activity",
+      "url": "/post/22",
+      "timestamps": {
+        "created_at": "2026-08-01T19:17:32+00:00"
+      },
+      "reactions": {
+        "likes": 0
+      },
+      "linked_item": null
+    },
+    {
+      "id": 20,
+      "body": "watching one piece",
+      "attachment": {
+        "url": "https://static.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/5b/3b/euLhcrxIo1H0yc.gif",
+        "preview_url": "https://static.klipy.com/ii/4e7bea9f7a3371424e6c16ebc93252fe/5b/3b/rjv6Ng2DXnNRpfmqE.gif",
+        "title": "Sword Art Online: Silica Scared",
+        "source": "klipy"
+      },
+      "created_at": "2026-05-13T20:02:29+00:00",
+      "edited_at": null,
+      "user": {
+        "id": 13,
+        "username": "sample-user-32",
+        "display_name": "Sample User",
+        "avatar_url": null,
+        "role": "user",
+        "store": {
+          "badge": null,
+          "name_color": null,
+          "profile_frame": null,
+          "banner_aura": null
+        }
+      },
+      "like_count": 0,
+      "user_liked": false,
+      "comment_count": 0,
+      "type": "activity",
+      "url": "/post/20",
+      "timestamps": {
+        "created_at": "2026-05-13T20:02:29+00:00"
+      },
+      "reactions": {
+        "likes": 0
+      },
+      "linked_item": null
+    }
+  ]
+}

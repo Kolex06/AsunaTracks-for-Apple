@@ -1,0 +1,364 @@
+{
+  "character": {
+    "id": 1051003,
+    "mal_id": 44167,
+    "name": "Yuko",
+    "name_kanji": "\u5e7d\u5b50",
+    "image_url": "https://cdn.myanimelist.net/images/characters/7/121514.webp",
+    "about": null,
+    "voice_actors": [
+      {
+        "person": {
+          "mal_id": 725,
+          "url": "https://myanimelist.net/people/725/Kumiko_Nishihara",
+          "images": {
+            "jpg": {
+              "image_url": "https://cdn.myanimelist.net/images/voiceactors/1/91609.jpg"
+            }
+          },
+          "name": "Nishihara, Kumiko",
+          "id": 4706,
+          "asunatracks_id": 4706
+        },
+        "language": "Japanese",
+        "id": 4706,
+        "asunatracks_id": 4706
+      },
+      {
+        "person": {
+          "mal_id": 264,
+          "url": "https://myanimelist.net/people/264/Colleen_OShaughnessey",
+          "images": {
+            "jpg": {
+              "image_url": "https://cdn.myanimelist.net/images/voiceactors/1/39297.jpg"
+            }
+          },
+          "name": "O'Shaughnessey, Colleen",
+          "id": 4845,
+          "asunatracks_id": 4845
+        },
+        "language": "English",
+        "id": 4845,
+        "asunatracks_id": 4845
+      },
+      {
+        "person": {
+          "mal_id": 55183,
+          "url": "https://myanimelist.net/people/55183/Corinne_Martin",
+          "images": {
+            "jpg": {
+              "image_url": "https://cdn.myanimelist.net/images/voiceactors/3/69934.jpg"
+            }
+          },
+          "name": "Martin, Corinne",
+          "id": 4696,
+          "asunatracks_id": 4696
+        },
+        "language": "French",
+        "id": 4696,
+        "asunatracks_id": 4696
+      },
+      {
+        "person": {
+          "mal_id": 65101,
+          "url": "https://myanimelist.net/people/65101/Livia_Amatucci",
+          "images": {
+            "jpg": {
+              "image_url": "https://cdn.myanimelist.net/images/voiceactors/3/74639.jpg"
+            }
+          },
+          "name": "Amatucci, Livia",
+          "id": 1965937,
+          "asunatracks_id": 1965937
+        },
+        "language": "Italian",
+        "id": 1965937,
+        "asunatracks_id": 1965937
+      },
+      {
+        "person": {
+          "mal_id": 11403,
+          "url": "https://myanimelist.net/people/11403/Flora_Paulita",
+          "images": {
+            "jpg": {
+              "image_url": "https://cdn.myanimelist.net/images/voiceactors/2/69924.jpg"
+            }
+          },
+          "name": "Paulita, Flora",
+          "id": 5222,
+          "asunatracks_id": 5222
+        },
+        "language": "Portuguese (BR)",
+        "id": 5222,
+        "asunatracks_id": 5222
+      }
+    ],
+    "image_fallbacks": [],
+    "aliases": [],
+    "votes": {
+      "up": 0,
+      "down": 0,
+      "score": 0,
+      "user_vote": 0
+    },
+    "favorite": false,
+    "media": [
+      {
+        "id": 243086,
+        "media_type": "anime",
+        "mal_id": 48425,
+        "title": "Akuma-kun (ONA)",
+        "title_english": null,
+        "title_japanese": "\u60aa\u9b54\u304f\u3093",
+        "title_synonyms": [],
+        "synopsis": "Millennium Research Institute, a counseling office where bizarre requests come in. The head of the research institute, Ichirou Umoregi, also known as \"Akuma-kun,\" a genius boy who only appears once in 10,000 years. However, he doesn't know his real family. So Akuma-kun, along with his partner Mephisto III, pursue the mystery of his origin while challenging mysterious cases in this mysterious detective buddy story.\n\n(Source: Fandom)",
+        "image_url": "https://cdn.myanimelist.net/images/anime/1465/156835l.webp",
+        "banner_image_url": null,
+        "score": 6.74,
+        "rank": 6435,
+        "popularity": 5660,
+        "status": "Finished Airing",
+        "type": "ONA",
+        "episodes": 12,
+        "chapters": 0,
+        "volumes": 0,
+        "start_date": "2023-11-09",
+        "end_date": null,
+        "season": "fall",
+        "year": 2023,
+        "age_rating": "R - 17+ (violence & profanity)",
+        "rating": "R - 17+ (violence & profanity)",
+        "asunatracks_score": {
+          "score": null,
+          "score_10": null,
+          "rating": null,
+          "count": 0
+        },
+        "genres": [
+          {
+            "id": 54,
+            "mal_id": 14,
+            "name": "Horror",
+            "kind": "genre"
+          },
+          {
+            "id": 87,
+            "mal_id": 37,
+            "name": "Supernatural",
+            "kind": "genre"
+          },
+          {
+            "id": 5,
+            "mal_id": 41,
+            "name": "Suspense",
+            "kind": "genre"
+          },
+          {
+            "id": 7351,
+            "mal_id": 6,
+            "name": "Mythology",
+            "kind": "theme"
+          }
+        ],
+        "role": "Supporting",
+        "voice_actors": [
+          {
+            "person": {
+              "mal_id": 11403,
+              "url": "https://myanimelist.net/people/11403/Flora_Paulita",
+              "images": {
+                "jpg": {
+                  "image_url": "https://cdn.myanimelist.net/images/voiceactors/2/69924.jpg"
+                }
+              },
+              "name": "Paulita, Flora",
+              "favorites": 45,
+              "id": 5222,
+              "asunatracks_id": 5222
+            },
+            "language": "Portuguese (BR)",
+            "id": 5222,
+            "asunatracks_id": 5222
+          },
+          {
+            "person": {
+              "mal_id": 65101,
+              "url": "https://myanimelist.net/people/65101/Livia_Amatucci",
+              "images": {
+                "jpg": {
+                  "image_url": "https://cdn.myanimelist.net/images/voiceactors/3/74639.jpg"
+                }
+              },
+              "name": "Amatucci, Livia",
+              "favorites": 0,
+              "id": 1965937,
+              "asunatracks_id": 1965937
+            },
+            "language": "Italian",
+            "id": 1965937,
+            "asunatracks_id": 1965937
+          },
+          {
+            "person": {
+              "mal_id": 725,
+              "url": "https://myanimelist.net/people/725/Kumiko_Nishihara",
+              "images": {
+                "jpg": {
+                  "image_url": "https://cdn.myanimelist.net/images/voiceactors/1/91609.jpg"
+                }
+              },
+              "name": "Nishihara, Kumiko",
+              "favorites": 32,
+              "id": 4706,
+              "asunatracks_id": 4706
+            },
+            "language": "Japanese",
+            "id": 4706,
+            "asunatracks_id": 4706
+          },
+          {
+            "person": {
+              "mal_id": 264,
+              "url": "https://myanimelist.net/people/264/Colleen_OShaughnessey",
+              "images": {
+                "jpg": {
+                  "image_url": "https://cdn.myanimelist.net/images/voiceactors/1/39297.jpg"
+                }
+              },
+              "name": "O'Shaughnessey, Colleen",
+              "favorites": 53,
+              "id": 4845,
+              "asunatracks_id": 4845
+            },
+            "language": "English",
+            "id": 4845,
+            "asunatracks_id": 4845
+          },
+          {
+            "person": {
+              "mal_id": 55183,
+              "url": "https://myanimelist.net/people/55183/Corinne_Martin",
+              "images": {
+                "jpg": {
+                  "image_url": "https://cdn.myanimelist.net/images/voiceactors/3/69934.jpg"
+                }
+              },
+              "name": "Martin, Corinne",
+              "favorites": 0,
+              "id": 4696,
+              "asunatracks_id": 4696
+            },
+            "language": "French",
+            "id": 4696,
+            "asunatracks_id": 4696
+          }
+        ]
+      },
+      {
+        "id": 308037,
+        "media_type": "anime",
+        "mal_id": 8194,
+        "title": "Akuma-kun",
+        "title_english": null,
+        "title_japanese": null,
+        "title_synonyms": [],
+        "synopsis": null,
+        "image_url": "https://cdn.myanimelist.net/images/anime/1523/148322l.webp",
+        "banner_image_url": null,
+        "score": null,
+        "rank": null,
+        "popularity": null,
+        "status": null,
+        "type": null,
+        "episodes": 0,
+        "chapters": 0,
+        "volumes": 0,
+        "start_date": null,
+        "end_date": null,
+        "season": null,
+        "year": null,
+        "age_rating": null,
+        "rating": null,
+        "asunatracks_score": {
+          "score": null,
+          "score_10": null,
+          "rating": null,
+          "count": 0
+        },
+        "genres": [],
+        "role": "Supporting",
+        "voice_actors": []
+      },
+      {
+        "id": 313984,
+        "media_type": "anime",
+        "mal_id": 8226,
+        "title": "Akuma-kun (Movie)",
+        "title_english": null,
+        "title_japanese": null,
+        "title_synonyms": [],
+        "synopsis": null,
+        "image_url": "https://cdn.myanimelist.net/images/anime/9/21276l.webp",
+        "banner_image_url": null,
+        "score": null,
+        "rank": null,
+        "popularity": null,
+        "status": null,
+        "type": null,
+        "episodes": 0,
+        "chapters": 0,
+        "volumes": 0,
+        "start_date": null,
+        "end_date": null,
+        "season": null,
+        "year": null,
+        "age_rating": null,
+        "rating": null,
+        "asunatracks_score": {
+          "score": null,
+          "score_10": null,
+          "rating": null,
+          "count": 0
+        },
+        "genres": [],
+        "role": "Supporting",
+        "voice_actors": []
+      },
+      {
+        "id": 313985,
+        "media_type": "anime",
+        "mal_id": 8227,
+        "title": "Akuma-kun: Youkoso Akuma Land e!!",
+        "title_english": null,
+        "title_japanese": null,
+        "title_synonyms": [],
+        "synopsis": null,
+        "image_url": "https://cdn.myanimelist.net/images/anime/1234/148922l.webp",
+        "banner_image_url": null,
+        "score": null,
+        "rank": null,
+        "popularity": null,
+        "status": null,
+        "type": null,
+        "episodes": 0,
+        "chapters": 0,
+        "volumes": 0,
+        "start_date": null,
+        "end_date": null,
+        "season": null,
+        "year": null,
+        "age_rating": null,
+        "rating": null,
+        "asunatracks_score": {
+          "score": null,
+          "score_10": null,
+          "rating": null,
+          "count": 0
+        },
+        "genres": [],
+        "role": "Supporting",
+        "voice_actors": []
+      }
+    ]
+  }
+}

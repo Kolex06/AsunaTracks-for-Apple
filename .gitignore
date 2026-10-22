@@ -1,5 +1,20 @@
 .DS_Store
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+
 .build/
 dist/
-xcuserdata/
-*.xcuserstate
+
+# Local tooling and captures are not release source.
+.codex/
+Screenshots/*
+*.ipa
+*.xcarchive/
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.p8
+.env
+.env.*

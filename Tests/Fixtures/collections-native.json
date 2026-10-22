@@ -1,0 +1,600 @@
+{
+  "items": [
+    {
+      "id": 2,
+      "title": "Sword Art online Watch Order",
+      "short_description": null,
+      "description": "Sword Art Online (SAO) is worth watching for its unique concept, exciting action, and emotional storytelling. The series explores a gripping premise: players trapped in a virtual MMORPG where dying in the game means death in real life. Its stunningly animated battles, immersive virtual worlds like Aincrad and Alfheim, and evolving challenges keep viewers hooked. SAO also dives into emotional themes, from survival and trauma to love and self-discovery, making it more than just an action series. Kirito and Asuna\u2019s relationship adds a heartfelt layer to the story, appealing to fans of romance. The series\u2019 influence on the \"trapped-in-a-game\" anime genre is undeniable, and its blend of sci-fi, fantasy, and character-driven moments offers something for everyone. Whether you're a gamer or anime fan, SAO delivers a thrilling and meaningful journey.",
+      "collection_type": "watch_order",
+      "tags": [
+        "SAO",
+        "Virtual World",
+        "Action",
+        "Romance",
+        "Fantasy",
+        "Adventure",
+        "Isekai",
+        "Full Dive",
+        "VR",
+        "masterpiece",
+        "Fire Anime",
+        "SAO Order"
+      ],
+      "banner_url": null,
+      "ranked": true,
+      "stats": {
+        "item_count": 7,
+        "like_count": 1,
+        "follower_count": 1,
+        "comment_count": 1,
+        "suggestion_count": 0,
+        "clone_count": 0,
+        "collaborator_count": 0
+      },
+      "viewer_liked": false,
+      "viewer_following": false,
+      "preview_items": [
+        {
+          "id": 32,
+          "media_type": "anime",
+          "mal_id": 11757,
+          "title": "Sword Art Online",
+          "title_english": "Sword Art Online",
+          "title_japanese": "\u30bd\u30fc\u30c9\u30a2\u30fc\u30c8\u30fb\u30aa\u30f3\u30e9\u30a4\u30f3",
+          "title_synonyms": [
+            "S.A.O",
+            "SAO"
+          ],
+          "synopsis": "Ever since the release of the innovative NerveGear, gamers from all around the globe have been given the opportunity to experience a completely immersive virtual reality. Sword Art Online (SAO), one of the most recent games on the console, offers a gateway into the wondrous world of Aincrad, a vivid, medieval landscape where users can do anything within the limits of imagination. With the release of this worldwide sensation, gaming has never felt more lifelike.\n\nHowever, the idyllic fantasy rapidly becomes a brutal nightmare when SAO's creator traps thousands of players inside the game. The \"log-out\" function has been removed, with the only method of escape involving beating all of Aincrad's one hundred increasingly difficult levels. Adding to the struggle, any in-game death becomes permanent, ending the player's life in the real world.\n\nWhile Kazuto \"Kirito\" Kirigaya was fortunate enough to be a beta-tester for the game, he quickly finds that despite his advantages, he cannot overcome SAO's challenges alone. Teaming up with Asuna Yuuki and other talented players, Kirito makes an effort to face the seemingly insurmountable trials head-on. But with difficult bosses and threatening dark cults impeding his progress, Kirito finds that such tasks are much easier said than done.\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/11/39717l.webp",
+          "banner_image_url": "https://i.ibb.co/4RBnkFW2/9a9766ff1c12.gif",
+          "score": 7.23,
+          "rank": 3590,
+          "popularity": 7,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 25,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2012-07-08",
+          "end_date": "2012-12-23T00:00:00+00:00",
+          "season": "summer",
+          "year": 2012,
+          "age_rating": "PG-13 - Teens 13 or older",
+          "rating": "PG-13 - Teens 13 or older",
+          "asunatracks_score": {
+            "score": 86.2,
+            "score_10": 8.6,
+            "rating": 8.6,
+            "count": 13
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 20,
+              "mal_id": 2,
+              "name": "Adventure",
+              "kind": "genre"
+            },
+            {
+              "id": 1,
+              "mal_id": 10,
+              "name": "Fantasy",
+              "kind": "genre"
+            },
+            {
+              "id": 23,
+              "mal_id": 22,
+              "name": "Romance",
+              "kind": "genre"
+            },
+            {
+              "id": 132,
+              "mal_id": 79,
+              "name": "Video Game",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 76,
+          "media_type": "anime",
+          "mal_id": 20021,
+          "title": "Sword Art Online: Extra Edition",
+          "title_english": "Sword Art Online: Extra Edition",
+          "title_japanese": "\u30bd\u30fc\u30c9\u30a2\u30fc\u30c8\u30fb\u30aa\u30f3\u30e9\u30a4\u30f3 Extra Edition",
+          "title_synonyms": [
+            "S.A.O: Extra Edition",
+            "SAO: Extra Edition"
+          ],
+          "synopsis": "Kazuto \"Kirito\" Kirigaya and his sister Suguha meet up with Asuna Yuuki, Rika \"Lisbeth\" Shinozaki, and Keiko \"Silica\" Ayano at the SAO Survivor School. Kirito then attends emergency counseling, while the girls go for a swim at the pool. It turns out that said \"emergency counseling\" is a subterfuge set up by Seijirou Kikuoka, who aims to rehash the incident of Sword Art Online in hopes of determining Akihiko Kayaba's motives. What will the girls get up to in the pool, and what awaits Kirito and his \"counseling\"?\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/8/80352l.webp",
+          "banner_image_url": null,
+          "score": 6.55,
+          "rank": 7674,
+          "popularity": 850,
+          "status": "Finished Airing",
+          "type": "Special",
+          "episodes": 1,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2013-12-31",
+          "end_date": null,
+          "season": "fall",
+          "year": 2013,
+          "age_rating": "PG-13 - Teens 13 or older",
+          "rating": "PG-13 - Teens 13 or older",
+          "asunatracks_score": {
+            "score": 86.7,
+            "score_10": 8.7,
+            "rating": 8.7,
+            "count": 6
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 1,
+              "mal_id": 10,
+              "name": "Fantasy",
+              "kind": "genre"
+            },
+            {
+              "id": 132,
+              "mal_id": 79,
+              "name": "Video Game",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 71,
+          "media_type": "anime",
+          "mal_id": 21881,
+          "title": "Sword Art Online II",
+          "title_english": "Sword Art Online II",
+          "title_japanese": "\u30bd\u30fc\u30c9\u30a2\u30fc\u30c8\u30fb\u30aa\u30f3\u30e9\u30a4\u30f3 II",
+          "title_synonyms": [
+            "Phantom Bullet",
+            "SAO II",
+            "Sword Art Online 2",
+            "SAO 2"
+          ],
+          "synopsis": "A year after escaping Sword Art Online, Kazuto Kirigaya has been settling back into the real world. However, his peace is short-lived as a new incident occurs in a game called Gun Gale Online, where a player by the name of Death Gun appears to be killing people in the real world by shooting them in-game. Approached by officials to assist in investigating the murders, Kazuto assumes his persona of Kirito once again and logs into Gun Gale Online, intent on stopping the killer.\n\nOnce inside, Kirito meets Sinon, a highly skilled sniper afflicted by a traumatic past. She is soon dragged in his chase after Death Gun, and together they enter the Bullet of Bullets, a tournament where their target is sure to appear. Uncertain of Death Gun's real powers, Kirito and Sinon race to stop him before he has the chance to claim another life. Not everything goes smoothly, however, as scars from the past impede their progress. In a high-stakes game where the next victim could easily be one of them, Kirito puts his life on the line in the virtual world once more.\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1223/121999l.webp",
+          "banner_image_url": null,
+          "score": 6.72,
+          "rank": 6554,
+          "popularity": 40,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 24,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2014-07-05",
+          "end_date": "2014-12-20T00:00:00+00:00",
+          "season": "summer",
+          "year": 2014,
+          "age_rating": "PG-13 - Teens 13 or older",
+          "rating": "PG-13 - Teens 13 or older",
+          "asunatracks_score": {
+            "score": 83.5,
+            "score_10": 8.3,
+            "rating": 8.3,
+            "count": 10
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 20,
+              "mal_id": 2,
+              "name": "Adventure",
+              "kind": "genre"
+            },
+            {
+              "id": 1,
+              "mal_id": 10,
+              "name": "Fantasy",
+              "kind": "genre"
+            },
+            {
+              "id": 23,
+              "mal_id": 22,
+              "name": "Romance",
+              "kind": "genre"
+            },
+            {
+              "id": 132,
+              "mal_id": 79,
+              "name": "Video Game",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "media_type": "anime",
+          "mal_id": 31765,
+          "title": "Sword Art Online Movie: Ordinal Scale",
+          "title_english": "Sword Art Online the Movie: Ordinal Scale",
+          "title_japanese": "\u5287\u5834\u7248 \u30bd\u30fc\u30c9\u30a2\u30fc\u30c8\u30fb\u30aa\u30f3\u30e9\u30a4\u30f3 -\u30aa\u30fc\u30c7\u30a3\u30ca\u30eb\u30fb\u30b9\u30b1\u30fc\u30eb-",
+          "title_synonyms": [
+            "Gekijouban Sword Art Online"
+          ],
+          "synopsis": "In 2026, four years after the infamous Sword Art Online incident, a revolutionary new form of technology has emerged: the Augma, a device that utilizes an Augmented Reality system. Unlike the Virtual Reality of the NerveGear and the Amusphere, it is perfectly safe and allows players to use it while they are conscious, creating an instant hit on the market. The most popular application for the Augma is the game Ordinal Scale, which immerses players in a fantasy role-playing game with player rankings and rewards.\n\nFollowing the new craze, Kirito's friends dive into the game, and despite his reservations about the system, Kirito eventually joins them. While at first it appears to be just fun and games, they soon find out that the game is not all that it seems...\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1557/123313l.webp",
+          "banner_image_url": null,
+          "score": 7.56,
+          "rank": 1957,
+          "popularity": 299,
+          "status": "Finished Airing",
+          "type": "Movie",
+          "episodes": 1,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2017-02-18",
+          "end_date": null,
+          "season": "winter",
+          "year": 2017,
+          "age_rating": "R+ - Mild Nudity",
+          "rating": "R+ - Mild Nudity",
+          "asunatracks_score": {
+            "score": 88.8,
+            "score_10": 8.9,
+            "rating": 8.9,
+            "count": 8
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 20,
+              "mal_id": 2,
+              "name": "Adventure",
+              "kind": "genre"
+            },
+            {
+              "id": 227,
+              "mal_id": 24,
+              "name": "Sci-Fi",
+              "kind": "genre"
+            },
+            {
+              "id": 132,
+              "mal_id": 79,
+              "name": "Video Game",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "media_type": "anime",
+          "mal_id": 36474,
+          "title": "Sword Art Online: Alicization",
+          "title_english": "Sword Art Online: Alicization",
+          "title_japanese": "\u30bd\u30fc\u30c9\u30a2\u30fc\u30c8\u30fb\u30aa\u30f3\u30e9\u30a4\u30f3 \u30a2\u30ea\u30b7\u30bc\u30fc\u30b7\u30e7\u30f3",
+          "title_synonyms": [
+            "Sword Art Online III",
+            "SAO Alicization",
+            "Sword Art Online 3",
+            "SAO 3"
+          ],
+          "synopsis": "The Soul Translator is a state-of-the-art full-dive interface which interacts with the user's Fluctlight\u2014the technological equivalent of a human soul\u2014and fundamentally differs from the orthodox method of sending signals to the brain. The private institute Rath aims to perfect their creation by enlisting the aid of Sword Art Online survivor Kazuto Kirigaya. He works there as a part-time employee to test the system's capabilities in the Underworld: the fantastical realm generated by the Soul Translator. As per the confidentiality contract, any memories created by the machine in the virtual world are wiped upon returning to the real world. Kazuto can only vaguely recall a single name, Alice, which provokes a sense of unease when mentioned in reality.\n\nWhen Kazuto escorts Asuna Yuuki home one evening, they chance upon a familiar foe. Kazuto is mortally wounded in the ensuing fight and loses consciousness. When he comes to, he discovers that he has made a full-dive into the Underworld with seemingly no way to escape. He sets off on a quest, seeking a way back to the physical world once again.\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1993/93837l.webp",
+          "banner_image_url": null,
+          "score": 7.58,
+          "rank": 1873,
+          "popularity": 152,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 24,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2018-10-07",
+          "end_date": "2019-03-31T00:00:00+00:00",
+          "season": "fall",
+          "year": 2018,
+          "age_rating": "R - 17+ (violence & profanity)",
+          "rating": "R - 17+ (violence & profanity)",
+          "asunatracks_score": {
+            "score": 86.5,
+            "score_10": 8.7,
+            "rating": 8.7,
+            "count": 10
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 20,
+              "mal_id": 2,
+              "name": "Adventure",
+              "kind": "genre"
+            },
+            {
+              "id": 1,
+              "mal_id": 10,
+              "name": "Fantasy",
+              "kind": "genre"
+            },
+            {
+              "id": 132,
+              "mal_id": 79,
+              "name": "Video Game",
+              "kind": "theme"
+            }
+          ]
+        }
+      ],
+      "hero_image_url": "https://i.ibb.co/4RBnkFW2/9a9766ff1c12.gif",
+      "owner": {
+        "id": 1,
+        "username": "sample-user-1",
+        "display_name": "Sample User",
+        "avatar_url": null
+      }
+    },
+    {
+      "id": 3,
+      "title": "Cute Girls Doing High Stake Things",
+      "short_description": null,
+      "description": "cute girls doing mature stuff",
+      "collection_type": "regular",
+      "tags": [],
+      "banner_url": null,
+      "ranked": false,
+      "stats": {
+        "item_count": 4,
+        "like_count": 0,
+        "follower_count": 0,
+        "comment_count": 1,
+        "suggestion_count": 0,
+        "clone_count": 0,
+        "collaborator_count": 0
+      },
+      "viewer_liked": false,
+      "viewer_following": false,
+      "preview_items": [
+        {
+          "id": 9796,
+          "media_type": "anime",
+          "mal_id": 31500,
+          "title": "High School Fleet",
+          "title_english": "High School Fleet",
+          "title_japanese": "\u30cf\u30a4\u30b9\u30af\u30fc\u30eb\u30fb\u30d5\u30ea\u30fc\u30c8",
+          "title_synonyms": [
+            "Haifuri"
+          ],
+          "synopsis": "A hundred years after catastrophic shifts in tectonic plates caused most of its area to submerge, Japan now thrives as a maritime nation. High functioning cities line the coasts of Japan, and well developed sea routes are defended by specialized naval ships. The marine industry is flourishing, and young girls are eager to join the Blue Mermaids\u2014highly skilled women who devote their lives to protecting the seas.\n \nAfter some time apart, childhood friends Akeno Misaki and Moeka China are reunited at Yokosuka Girls' Marine High School. Here they are joined by others who share their dream of becoming Blue Mermaids. Soon, training exercises commence, with Akeno and Moeka being put in charge of their own ships and crew. Everything is progressing smoothly for Akeno as she settles into her role as captain and builds camaraderie between her fellow crew members aboard the Harekaze, a destroyer ship. However, unexpected engine and navigation failures soon leave their ship stranded and the crew in danger.\n \nHigh School Fleet follows the Harekaze's valiant crew as they navigate treacherous waters and other obstacles on their quest to become fully fledged Blue Mermaids.\n \n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/9/79670l.webp",
+          "banner_image_url": null,
+          "score": 7.32,
+          "rank": 3073,
+          "popularity": 2262,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 12,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2016-04-10",
+          "end_date": "2016-06-26T00:00:00+00:00",
+          "season": "spring",
+          "year": 2016,
+          "age_rating": "PG-13 - Teens 13 or older",
+          "rating": "PG-13 - Teens 13 or older",
+          "asunatracks_score": {
+            "score": 100.0,
+            "score_10": 10.0,
+            "rating": 10.0,
+            "count": 1
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 91,
+              "mal_id": 38,
+              "name": "Military",
+              "kind": "theme"
+            },
+            {
+              "id": 12,
+              "mal_id": 23,
+              "name": "School",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 9528,
+          "media_type": "anime",
+          "mal_id": 14131,
+          "title": "Girls & Panzer",
+          "title_english": "Girls und Panzer",
+          "title_japanese": "\u30ac\u30fc\u30eb\u30ba&\u30d1\u30f3\u30c4\u30a1\u30fc",
+          "title_synonyms": [
+            "Garupan",
+            "Girls und Panzer"
+          ],
+          "synopsis": "\"Senshadou\" is a traditional sport using World War II era tanks in elimination-based matches. Widely practiced by women and girls alike, it's advertised as a form of art geared towards making ladies more prominent in culture and appealing to men. Becoming a worldwide phenomenon over time, the influence of senshadou leads to the creation of a world championship which will soon be held in Japan.\n\nMiho Nishizumi, who comes from a lineage of well-respected senshadou specialists, is at odds with the sport after a traumatic event led to her retirement and eventually a rift to form between her and her family. To steer clear of the practice as much as possible, she transfers to Ooarai Girls Academy where the senshadou program has been abolished. However, with the news of the upcoming championships, the school revives their tankery program, and Miho is pushed into joining.\n\nNow, with the aid of some new friends, she must overcome her past and once again take command of a squadron of tanks in an effort to save her school from closure, all while proving to her family that the Nishizumi-style of senshadou is not solely about victory.\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/9/40969l.webp",
+          "banner_image_url": null,
+          "score": 7.55,
+          "rank": 1978,
+          "popularity": 846,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 12,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2012-10-09",
+          "end_date": "2013-03-25T00:00:00+00:00",
+          "season": "fall",
+          "year": 2012,
+          "age_rating": "PG-13 - Teens 13 or older",
+          "rating": "PG-13 - Teens 13 or older",
+          "asunatracks_score": {
+            "score": 70.0,
+            "score_10": 7.0,
+            "rating": 7.0,
+            "count": 1
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 36913,
+              "mal_id": 52,
+              "name": "CGDCT",
+              "kind": "theme"
+            },
+            {
+              "id": 91,
+              "mal_id": 38,
+              "name": "Military",
+              "kind": "theme"
+            },
+            {
+              "id": 12,
+              "mal_id": 23,
+              "name": "School",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 8422,
+          "media_type": "anime",
+          "mal_id": 50709,
+          "title": "Lycoris Recoil",
+          "title_english": "Lycoris Recoil",
+          "title_japanese": "\u30ea\u30b3\u30ea\u30b9\u30fb\u30ea\u30b3\u30a4\u30eb",
+          "title_synonyms": [
+            "LycoReco"
+          ],
+          "synopsis": "The number of terrorist acts in Japan has never been lower, thanks to the efforts of a syndicate called Direct Attack (DA). The organization raises orphaned girls as killers to carry out assassinations under their \"Lycoris\" program. Takina Inoue is an exceptional Lycoris with a strong sense of purpose and a penchant for perfection. Unfortunately, a hostage situation tests her patience, and the resulting act of insubordination leads to her transfer out of DA. Not thrilled about losing the only place she belonged to, she reluctantly arrives at her new base of operations\u2014LycoReco, a cafe in disguise.\n\nTakina's new partner, however, turns out to be quite different from what she imagined. Despite being the famed Lycoris prodigy, Chisato Nishikigi appears almost unconcerned with her duties. She drags Takina along on all kinds of odd jobs under the simple explanation of helping people in need. Takina is even more puzzled when Chisato takes down a group of armed assailants without killing any of them. Feeling like a fish out of water, Takina itches to get reinstated into DA\u2014but Chisato is determined to prove to her that there is more to a life than just taking them.\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1261/127311l.webp",
+          "banner_image_url": null,
+          "score": 8.14,
+          "rank": 537,
+          "popularity": 418,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 13,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2022-07-02",
+          "end_date": "2022-09-24T00:00:00+00:00",
+          "season": "summer",
+          "year": 2022,
+          "age_rating": "PG-13 - Teens 13 or older",
+          "rating": "PG-13 - Teens 13 or older",
+          "asunatracks_score": {
+            "score": 86.4,
+            "score_10": 8.6,
+            "rating": 8.6,
+            "count": 7
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            }
+          ]
+        },
+        {
+          "id": 7917,
+          "media_type": "anime",
+          "mal_id": 54309,
+          "title": "Blue Archive the Animation",
+          "title_english": null,
+          "title_japanese": "\u30d6\u30eb\u30fc\u30a2\u30fc\u30ab\u30a4\u30d6 The Animation",
+          "title_synonyms": [],
+          "synopsis": "Kivotos is a federal megalopolis comprising thousands of schools and is led by the General Student Council (GSC), which acts as its governing body. Ironically, despite being an academy city, Kivotos is rife with gun violence, and all students wield firearms as part of their everyday lives.\n\nAs if the crisis in Kivotos was not enough, the GSC president is nowhere to be found. Fortunately, before her sudden disappearance, the GSC president enlisted the help of Sensei\u2014a teacher who is most likely the only one in Kivotos\u2014to support students in their time of need. Sensei's first course of action is to assist Abydos High School, a once prestigious academy now with merely five students in attendance. These remaining students are doing everything they can to pay their academy's crippling debt of almost one billion yen.\n\n[Written by MAL Rewrite]",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1739/140995l.webp",
+          "banner_image_url": null,
+          "score": 7.0,
+          "rank": 4855,
+          "popularity": 2859,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 12,
+          "chapters": 0,
+          "volumes": 0,
+          "start_date": "2024-04-07",
+          "end_date": "2024-06-23T00:00:00+00:00",
+          "season": "spring",
+          "year": 2024,
+          "age_rating": "PG-13 - Teens 13 or older",
+          "rating": "PG-13 - Teens 13 or older",
+          "asunatracks_score": {
+            "score": 90.0,
+            "score_10": 9.0,
+            "rating": 9.0,
+            "count": 1
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 1,
+              "mal_id": 10,
+              "name": "Fantasy",
+              "kind": "genre"
+            },
+            {
+              "id": 12,
+              "mal_id": 23,
+              "name": "School",
+              "kind": "theme"
+            }
+          ]
+        }
+      ],
+      "hero_image_url": "https://cdn.myanimelist.net/images/anime/9/79670l.webp",
+      "owner": {
+        "id": 8,
+        "username": "sample-user-59",
+        "display_name": "Sample User",
+        "avatar_url": null
+      }
+    }
+  ]
+}

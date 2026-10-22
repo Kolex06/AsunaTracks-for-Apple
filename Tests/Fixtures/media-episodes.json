@@ -1,0 +1,708 @@
+{
+  "page": 1,
+  "limit": 100,
+  "total": 25,
+  "has_next": false,
+  "items": [
+    {
+      "id": 34,
+      "episode_number": 1,
+      "title": "The World of Swords",
+      "title_japanese": "\u5263\u306e\u4e16\u754c",
+      "title_romanji": "Ken no Sekai\u00a0",
+      "aired": "2012-07-08",
+      "score": 4.23,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=459625",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/018d02b49a25a58bfd8a64416bdb69b41341616322_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/018d02b49a25a58bfd8a64416bdb69b41341616322_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 35,
+      "episode_number": 2,
+      "title": "Beater",
+      "title_japanese": "\u30d3\u30fc\u30bf\u30fc",
+      "title_romanji": "Beater\u00a0",
+      "aired": "2012-07-15",
+      "score": 4.23,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=463839",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/5b565aed16dac0773de2ebf1480689551342120811_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/5b565aed16dac0773de2ebf1480689551342120811_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 36,
+      "episode_number": 3,
+      "title": "The Red-Nosed Reindeer",
+      "title_japanese": "\u8d64\u9f3b\u306e\u30c8\u30ca\u30ab\u30a4",
+      "title_romanji": "Akahana no Tonakai\u00a0",
+      "aired": "2012-07-22",
+      "score": 4.1,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=466501",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/53bbd737f9b20cc862560f245e4dda5a1342732197_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/53bbd737f9b20cc862560f245e4dda5a1342732197_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 37,
+      "episode_number": 4,
+      "title": "The Black Swordsman",
+      "title_japanese": "\u9ed2\u306e\u5263\u58eb",
+      "title_romanji": "Kuro no Kenshi\u00a0",
+      "aired": "2012-07-29",
+      "score": 4.27,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=469465",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/a2002225cc3d8121f4cf0743c31390661343434707_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/a2002225cc3d8121f4cf0743c31390661343434707_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 38,
+      "episode_number": 5,
+      "title": "A Crime Within the Walls",
+      "title_japanese": "\u570f\u5185\u4e8b\u4ef6",
+      "title_romanji": "Kennai Jiken\u00a0",
+      "aired": "2012-08-05",
+      "score": 4.07,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=472615",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/3deb3922bebdad0f96e023e74c16b2031344019041_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/3deb3922bebdad0f96e023e74c16b2031344019041_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 39,
+      "episode_number": 6,
+      "title": "Illusionary Avenger",
+      "title_japanese": "\u5e7b\u306e\u5fa9\u8b90\u8005",
+      "title_romanji": "Maboroshi no Fukushuu-sha\u00a0",
+      "aired": "2012-08-12",
+      "score": 4.09,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=475753",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/26133e39ba687490d8e98888382053a61344645410_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/26133e39ba687490d8e98888382053a61344645410_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 40,
+      "episode_number": 7,
+      "title": "The Temperature of the Heart",
+      "title_japanese": "\u5fc3\u306e\u6e29\u5ea6",
+      "title_romanji": "Kokoro no Ondo\u00a0",
+      "aired": "2012-08-19",
+      "score": 4.23,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=479003",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/88de57459d6402267bfba8f8527d5e441345133548_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/88de57459d6402267bfba8f8527d5e441345133548_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 41,
+      "episode_number": 8,
+      "title": "The Sword Dance of White and Black",
+      "title_japanese": "\u9ed2\u3068\u767d\u306e\u5263\u821e",
+      "title_romanji": "Kuro to Shiro no Kenbu\u00a0",
+      "aired": "2012-08-26",
+      "score": 4.3,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=482237",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/56aaf16824ff261aebb08ebe56da6e361345758556_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/56aaf16824ff261aebb08ebe56da6e361345758556_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 42,
+      "episode_number": 9,
+      "title": "The Blue-Eyed Demon",
+      "title_japanese": "\u9752\u773c\u306e\u60aa\u9b54",
+      "title_romanji": "Seigan no Akuma\u00a0",
+      "aired": "2012-09-02",
+      "score": 4.56,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=485333",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/c63b9554ad4e6a65074c8dc97d6d2a851346614065_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/c63b9554ad4e6a65074c8dc97d6d2a851346614065_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 43,
+      "episode_number": 10,
+      "title": "Crimson Killing Intent",
+      "title_japanese": "\u7d05\u306e\u6bba\u610f",
+      "title_romanji": "Kurenai no Satsui\u00a0",
+      "aired": "2012-09-09",
+      "score": 4.39,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=488451",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/8b40fabb751442dca9eb69ad41ff35af1347148451_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/8b40fabb751442dca9eb69ad41ff35af1347148451_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 44,
+      "episode_number": 11,
+      "title": "The Girl of Morning Dew",
+      "title_japanese": "\u671d\u9732\u306e\u5c11\u5973",
+      "title_romanji": "Asatsuyu no Shoujo\u00a0",
+      "aired": "2012-09-16",
+      "score": 3.94,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=491571",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/2f2439b591cec3786f0052860ef282b01347687426_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/2f2439b591cec3786f0052860ef282b01347687426_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 45,
+      "episode_number": 12,
+      "title": "Yui's Heart",
+      "title_japanese": "\u30e6\u30a4\u306e\u5fc3",
+      "title_romanji": "Yui no Kokoro\u00a0",
+      "aired": "2012-09-23",
+      "score": 3.95,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=494909",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/657638f228261d573923b9fa768905411348274535_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/657638f228261d573923b9fa768905411348274535_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 46,
+      "episode_number": 13,
+      "title": "Edge of Hell's Abyss",
+      "title_japanese": "\u5948\u843d\u306e\u6df5",
+      "title_romanji": "Naraku no Fuchi\u00a0",
+      "aired": "2012-09-30",
+      "score": 4.34,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=497997",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/a9bee2366b8210b5565086496693f0711348915217_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/a9bee2366b8210b5565086496693f0711348915217_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 47,
+      "episode_number": 14,
+      "title": "The End of the World",
+      "title_japanese": "\u4e16\u754c\u306e\u7d42\u7109",
+      "title_romanji": "Sekai no Shuuen\u00a0",
+      "aired": "2012-10-07",
+      "score": 4.32,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=500859",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/bed8c54e29c214313303ef9189f3f27e1349459587_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/bed8c54e29c214313303ef9189f3f27e1349459587_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 48,
+      "episode_number": 15,
+      "title": "Return",
+      "title_japanese": "\u5e30\u9084",
+      "title_romanji": "Kikan\u00a0",
+      "aired": "2012-10-14",
+      "score": 3.96,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=503955",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/e6feef9e31bbe38d812116b46d0349221349977999_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/e6feef9e31bbe38d812116b46d0349221349977999_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 49,
+      "episode_number": 16,
+      "title": "Land of the Fairies",
+      "title_japanese": "\u5996\u7cbe\u305f\u3061\u306e\u56fd",
+      "title_romanji": "Yousei-tachi no Kuni\u00a0",
+      "aired": "2012-10-21",
+      "score": 4.08,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=506767",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/f251c6dd0f2f24dd852d685f1bb9b8bd1350683853_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/f251c6dd0f2f24dd852d685f1bb9b8bd1350683853_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 50,
+      "episode_number": 17,
+      "title": "Captive Queen",
+      "title_japanese": "\u56da\u308f\u308c\u306e\u5973\u738b",
+      "title_romanji": "Toraware no Joou\u00a0",
+      "aired": "2012-10-28",
+      "score": 3.94,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=509859",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/ec3a5adb73086b7904aed3b7128532e21351124971_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/ec3a5adb73086b7904aed3b7128532e21351124971_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 51,
+      "episode_number": 18,
+      "title": "To the World Tree",
+      "title_japanese": "\u4e16\u754c\u6a39\u3078",
+      "title_romanji": "Sekaiju e\u00a0",
+      "aired": "2012-11-04",
+      "score": 3.94,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=513031",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/53aaa49e06a9b1fcd933567dc160ec6d1351790931_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire4-tmb/53aaa49e06a9b1fcd933567dc160ec6d1351790931_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 52,
+      "episode_number": 19,
+      "title": "The Lugru Corridor",
+      "title_japanese": "\u30eb\u30b0\u30eb\u30fc\u56de\u5eca",
+      "title_romanji": "Lugur Kairou\u00a0",
+      "aired": "2012-11-11",
+      "score": 4.04,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=516579",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/2e0502542cf21d36bdee690be65fc5771352495621_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/2e0502542cf21d36bdee690be65fc5771352495621_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 53,
+      "episode_number": 20,
+      "title": "General of the Blazing Flame",
+      "title_japanese": "\u731b\u708e\u306e\u5c06",
+      "title_romanji": "Mouen no Shou\u00a0",
+      "aired": "2012-11-18",
+      "score": 4.21,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=519665",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/69c4842f65277546306757f2b9a51c621353103683_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/69c4842f65277546306757f2b9a51c621353103683_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 54,
+      "episode_number": 21,
+      "title": "The Truth of Alfheim",
+      "title_japanese": "\u30a2\u30eb\u30f4\u30d8\u30a4\u30e0\u306e\u771f\u5b9f",
+      "title_romanji": "Aruvuheimu no Shinjitsu\u00a0",
+      "aired": "2012-11-25",
+      "score": 3.8,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=522551",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/b0b6b2484e5da9f5c9eec428cdbfeb101353735125_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/b0b6b2484e5da9f5c9eec428cdbfeb101353735125_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 55,
+      "episode_number": 22,
+      "title": "Grand Quest",
+      "title_japanese": "\u30b0\u30e9\u30f3\u30c9\u30fb\u30af\u30a8\u30b9\u30c8",
+      "title_romanji": "Gurando Kuesuto\u00a0",
+      "aired": "2012-12-02",
+      "score": 4.14,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=525720",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/221b3ee3386e75e1ec3e8bceb6ee8e6d1354319538_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/221b3ee3386e75e1ec3e8bceb6ee8e6d1354319538_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 56,
+      "episode_number": 23,
+      "title": "Bonds",
+      "title_japanese": "\u7d46",
+      "title_romanji": "Kizuna\u00a0",
+      "aired": "2012-12-09",
+      "score": 4.05,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=529322",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/e1194a5fb82fdc948753e3ba403f822e1354930655_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire3-tmb/e1194a5fb82fdc948753e3ba403f822e1354930655_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 57,
+      "episode_number": 24,
+      "title": "Gilded Hero",
+      "title_japanese": "\u934d\u91d1\u306e\u52c7\u8005",
+      "title_romanji": "Mekki no Yuusha\u00a0",
+      "aired": "2012-12-16",
+      "score": 3.85,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=532428",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/f9a33db29aa2695899b612db7f6071761355514790_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire2-tmb/f9a33db29aa2695899b612db7f6071761355514790_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    },
+    {
+      "id": 58,
+      "episode_number": 25,
+      "title": "The World Seed",
+      "title_japanese": "\u4e16\u754c\u306e\u7a2e\u5b50",
+      "title_romanji": "Sekai no Shushi\u00a0",
+      "aired": "2012-12-23",
+      "score": 4.01,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=535278",
+      "image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/716e1fee008a058dae0759a03bf885321356130001_large.jpg",
+      "cover_image_url": "https://img1.ak.crunchyroll.com/i/spire1-tmb/716e1fee008a058dae0759a03bf885321356130001_large.jpg",
+      "air_type": "SUB,DUB",
+      "air_types": [
+        "SUB",
+        "DUB"
+      ],
+      "votes": {
+        "up": 0,
+        "down": 0,
+        "score": 0,
+        "user_vote": 0
+      },
+      "watched_at": null,
+      "watched_event_type": null,
+      "history_events": []
+    }
+  ]
+}

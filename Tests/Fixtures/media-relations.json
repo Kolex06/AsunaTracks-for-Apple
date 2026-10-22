@@ -1,0 +1,127 @@
+{
+  "items": [
+    {
+      "relation": "Sequel",
+      "entries": [
+        {
+          "id": 76,
+          "mal_id": 20021,
+          "type": "anime",
+          "name": "Sword Art Online: Extra Edition",
+          "url": "https://myanimelist.net/anime/20021/Sword_Art_Online__Extra_Edition",
+          "image_url": "https://cdn.myanimelist.net/images/anime/8/80352l.webp",
+          "route": "/media/anime/76",
+          "media_type": "anime",
+          "title_english": "Sword Art Online: Extra Edition"
+        },
+        {
+          "id": 71,
+          "mal_id": 21881,
+          "type": "anime",
+          "name": "Sword Art Online II",
+          "url": "https://myanimelist.net/anime/21881/Sword_Art_Online_II",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1223/121999l.webp",
+          "route": "/media/anime/71",
+          "media_type": "anime",
+          "title_english": "Sword Art Online II"
+        }
+      ],
+      "relation_type": "sequel"
+    },
+    {
+      "relation": "Adaptation",
+      "entries": [
+        {
+          "id": 978,
+          "mal_id": 23718,
+          "type": "manga",
+          "name": "Sword Art Online: Aincrad",
+          "url": "https://myanimelist.net/manga/23718/Sword_Art_Online__Aincrad",
+          "image_url": "https://cdn.myanimelist.net/images/manga/2/77727l.webp",
+          "route": "/media/manga/978",
+          "media_type": "manga",
+          "title_english": "Sword Art Online: Aincrad"
+        },
+        {
+          "id": 979,
+          "mal_id": 44733,
+          "type": "manga",
+          "name": "Sword Art Online: Fairy Dance",
+          "url": "https://myanimelist.net/manga/44733/Sword_Art_Online__Fairy_Dance",
+          "image_url": "https://cdn.myanimelist.net/images/manga/1/137905l.webp",
+          "route": "/media/manga/979",
+          "media_type": "manga",
+          "title_english": "Sword Art Online: Fairy Dance"
+        },
+        {
+          "id": 980,
+          "mal_id": 21479,
+          "type": "manga",
+          "name": "Sword Art Online",
+          "url": "https://myanimelist.net/manga/21479/Sword_Art_Online",
+          "image_url": "https://cdn.myanimelist.net/images/manga/2/280994l.webp",
+          "route": "/media/manga/980",
+          "media_type": "manga",
+          "title_english": "Sword Art Online"
+        }
+      ],
+      "relation_type": "adaptation"
+    },
+    {
+      "relation": "Alternative Version",
+      "entries": [
+        {
+          "id": 81,
+          "mal_id": 42916,
+          "type": "anime",
+          "name": "Sword Art Online: Progressive Movie - Hoshi Naki Yoru no Aria",
+          "url": "https://myanimelist.net/anime/42916/Sword_Art_Online__Progressive_Movie_-_Hoshi_Naki_Yoru_no_Aria",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1590/116274l.webp",
+          "route": "/media/anime/81",
+          "media_type": "anime",
+          "title_english": "Sword Art Online the Movie: Progressive - Aria of a Starless Night"
+        }
+      ],
+      "relation_type": "alternative_version"
+    },
+    {
+      "relation": "Other",
+      "entries": [
+        {
+          "id": 79,
+          "mal_id": 16099,
+          "type": "anime",
+          "name": "Sword Art Online: Sword Art Offline",
+          "url": "https://myanimelist.net/anime/16099/Sword_Art_Online__Sword_Art_Offline",
+          "image_url": "https://cdn.myanimelist.net/images/anime/8/43461l.webp",
+          "route": "/media/anime/79",
+          "media_type": "anime",
+          "title_english": "Sword Art Offline"
+        },
+        {
+          "id": 981,
+          "mal_id": 53588,
+          "type": "anime",
+          "name": "Sword Art Online: Full Dive - Opening Eizou",
+          "url": "https://myanimelist.net/anime/53588/Sword_Art_Online__Full_Dive_-_Opening_Eizou",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1889/130946l.webp",
+          "route": "/media/anime/981",
+          "media_type": "anime",
+          "title_english": "Sword Art Online: Full Dive - Opening Video"
+        },
+        {
+          "id": 70,
+          "mal_id": 63736,
+          "type": "anime",
+          "name": "Sword Art Online: Unanswered//butterfly",
+          "url": "https://myanimelist.net/anime/63736/Sword_Art_Online__Unanswered_butterfly",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1111/158814l.webp",
+          "route": "/media/anime/70",
+          "media_type": "anime",
+          "title_english": null
+        }
+      ],
+      "relation_type": "other"
+    }
+  ]
+}

@@ -1,0 +1,1636 @@
+// !$*UTF8*$!
+{
+	"classes" = {
+	};
+	"objectVersion" = "56";
+	"archiveVersion" = "1";
+	"objects" = {
+		"0A3E27B8CA818264D75C8D81" = {
+			"isa" = "PBXGroup";
+			"name" = "Products";
+			"children" = (
+				"8E60FFB9200E20F36AD2AFA9",
+				"CA7728C010004EB70FA8BEBC",
+				"594EB604481615CBE0E3454D",
+				"F2D44A950E47C22DAF1890DF",
+				"9400D359C4416BEC2693924B",
+				"DC4CC11A9123ADC89D170742",
+			);
+			"sourceTree" = "<group>";
+		};
+		"7EE2102452403E297000E8A4" = {
+			"buildActionMask" = "2147483647";
+			"dstSubfolderSpec" = "13";
+			"isa" = "PBXCopyFilesBuildPhase";
+			"runOnlyForDeploymentPostprocessing" = "0";
+			"dstPath" = "";
+			"name" = "Embed Widgets";
+			"files" = (
+				"36161F9858D62D87F3720AE1",
+			);
+		};
+		"8FB72ED78846ADAE7C9F9B34" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "80D7C1CFA07259691614D9C0";
+		};
+		"F16CDA74BA5C3255A597E9F9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "846C774775F922F10022AB59";
+		};
+		"BB03D68E07BB7214E0318892" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D6B40BADC698867BFC90DBA1";
+		};
+		"9FB9B18B559152A16F82C96A" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/macOS/AsunaTracksMacWidgets.entitlements";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
+				"SUPPORTED_PLATFORMS" = "macosx";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SDKROOT" = "macosx";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				"SWIFT_VERSION" = "5.0";
+				"PRODUCT_NAME" = "AsunaTracksMacWidgets";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"CODE_SIGN_IDENTITY" = "Apple Development";
+				"SKIP_INSTALL" = "YES";
+				"ENABLE_APP_SANDBOX" = "YES";
+				"ENABLE_HARDENED_RUNTIME" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/macOS/AsunaTracksMacWidgets-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+			};
+		};
+		"89DB81F6E8C0A635BFD38135" = {
+			"productType" = "com.apple.product-type.application";
+			"productReference" = "9400D359C4416BEC2693924B";
+			"buildConfigurationList" = "FE3A3468A9FF828E5DE9E1BF";
+			"productName" = "AsunaTracksMac";
+			"isa" = "PBXNativeTarget";
+			"buildPhases" = (
+				"238DF9CF0608F018ECC66E2A",
+				"6BFC44B002B166030E3A6AC0",
+				"1AB4ACA7DB921F13588CD950",
+				"971B2B46EE06B343C76BBE1D",
+			);
+			"dependencies" = (
+				"026E0BA3D76C0ABB5654F8C6",
+			);
+			"name" = "AsunaTracksMac";
+			"buildRules" = (
+			);
+		};
+		"95800F10FD06FFC976C21433" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2D2BAD034212BEDB6D39CE98";
+		};
+		"C401F8A463CBA2A8DE81C232" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "DC4CC11A9123ADC89D170742";
+			"settings" = {
+				"ATTRIBUTES" = (
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"1DEBA7A79D32A4581205E3DD" = {
+			"path" = "AsunaTracks/Watch/Watch-Info.plist";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"sourceTree" = "<group>";
+		};
+		"8DDBB3FB21E54245BA150156" = {
+			"isa" = "XCConfigurationList";
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+			"buildConfigurations" = (
+				"0A3656C730AAA9AE1FE5A4AC",
+				"2735D9701350ADEEF32B853F",
+			);
+		};
+		"80D7C1CFA07259691614D9C0" = {
+			"path" = "AsunaTracks/iOS/MediaExtrasView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"3451920B58BD53532E1DE99B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000001";
+		};
+		"2CF1614D5EEA17DCD2D4007B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8D5935296970F7B8B4F4644E";
+		};
+		"A33C0186C44C835FE85CCA8C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9640626CDE789CA82576632A";
+		};
+		"AB0000000000000000000002" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AB0000000000000000000003";
+		};
+		"971B2B46EE06B343C76BBE1D" = {
+			"buildActionMask" = "2147483647";
+			"dstSubfolderSpec" = "13";
+			"isa" = "PBXCopyFilesBuildPhase";
+			"runOnlyForDeploymentPostprocessing" = "0";
+			"dstPath" = "";
+			"name" = "Embed Mac Widgets";
+			"files" = (
+				"C401F8A463CBA2A8DE81C232",
+			);
+		};
+		"AC0000000000000000000005" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC0000000000000000000002";
+		};
+		"47BFD39673BD1E915205B5FC" = {
+			"path" = "AsunaTracks/Widgets/AsunaTracksWidgets-Info.plist";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"sourceTree" = "<group>";
+		};
+		"2735D9701350ADEEF32B853F" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"MARKETING_VERSION" = "1.0";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
+				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
+				"INFOPLIST_KEY_CFBundleVersion" = "5";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"INFOPLIST_KEY_CFBundleShortVersionString" = "1.0";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
+				"SDKROOT" = "watchos";
+				"INFOPLIST_KEY_WKApplication" = "YES";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"SWIFT_VERSION" = "5.0";
+				"SKIP_INSTALL" = "YES";
+				"INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp" = "YES";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/Watch/Watch-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+			};
+			"name" = "Release";
+		};
+		"29CB3B1051376F84AF7F72BE" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/macOS/AsunaTracksMac.entitlements";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"EXECUTABLE_NAME" = "AsunaTracksMac";
+				"SUPPORTED_PLATFORMS" = "macosx";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SDKROOT" = "macosx";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				"SWIFT_VERSION" = "5.0";
+				"PRODUCT_NAME" = "AsunaTracks";
+				"APPLICATION_EXTENSION_API_ONLY" = "NO";
+				"CODE_SIGN_IDENTITY" = "Apple Development";
+				"SKIP_INSTALL" = "NO";
+				"ENABLE_APP_SANDBOX" = "YES";
+				"ENABLE_HARDENED_RUNTIME" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/macOS/AsunaTracksMac-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+			};
+		};
+		"A045C669182ABDFD58A29EBD" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"remoteGlobalIDString" = "0047A088F2540529FE30404B";
+			"remoteInfo" = "AsunaTracksWatchWidgets";
+			"proxyType" = "1";
+		};
+		"9D027D27254F399CDB878E1A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "374E1958BF03776AF0296B02";
+		};
+		"6AFAFCBBC18CBC16EECF6956" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"AC0000000000000000000001" = {
+			"path" = "AsunaTracks/Shared/AsunaLoadingView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"C55BC714F387EC225C498785" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"0A01FEC8B6AEC2389FC4966D" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"INFOPLIST_FILE" = "AsunaTracks/Widgets/AsunaTracksWatchWidgets-Info.plist";
+				"SKIP_INSTALL" = "YES";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"SDKROOT" = "watchos";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_VERSION" = "5.0";
+				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
+			};
+		};
+		"8AD2DB74AAD5C51F0D932250" = {
+			"isa" = "XCConfigurationList";
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+			"buildConfigurations" = (
+				"EF0F281E8DE6C5633E634ABB",
+				"DC1D3FC8CA2FE2900A61CD84",
+			);
+		};
+		"245934CAA160029FBC4A04CC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7AB1B6DB94B79FD9616232E5";
+		};
+		"594EB604481615CBE0E3454D" = {
+			"path" = "AsunaTracksWidgets.appex";
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"B2C4DE64978B99DCF5A270BB" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"22C5DCA54D5ACCFD3366888D",
+				"FF1695F8B698D0FDFF9A7E01",
+				"D838573CE69110DE20AD9490",
+				"235C2ADA9C97016F8F986561",
+				"719BD1807EA14E9093A174B2",
+				"1E8B742E517E49ED9C1F224E",
+				"A0FF6B6A671D45579F4C1946",
+				"C0C435E0A0084E239F9AC059",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"1AB84B322ADA8FE83C80D70A" = {
+			"productType" = "com.apple.product-type.app-extension";
+			"productReference" = "DC4CC11A9123ADC89D170742";
+			"buildConfigurationList" = "2115071FA65B9D3CF84426D0";
+			"productName" = "AsunaTracksMacWidgets";
+			"isa" = "PBXNativeTarget";
+			"buildPhases" = (
+				"088C5F01024354FC1D22D707",
+				"53BFE87B3AB14EF9EE542838",
+				"A6719CD05162B7A6D38D08E1",
+			);
+			"dependencies" = (
+			);
+			"name" = "AsunaTracksMacWidgets";
+			"buildRules" = (
+			);
+		};
+		"D9C7C8231B56502F4985E1F1" = {
+			"path" = "AsunaTracks/Widgets/AsunaTracksWatchWidgets-Info.plist";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"sourceTree" = "<group>";
+		};
+		"A867A68DD83D4F6C6C8A3546" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9B1CE08E975C338A3C00CFF4";
+		};
+		"D838573CE69110DE20AD9490" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7AB1B6DB94B79FD9616232E5";
+		};
+		"AF0000000000000000000013" = {
+			"path" = "AsunaTracks/iOS/CollectionsView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"34F4D3B134ADE5734BDED7F7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4C63730A5165A8AB8A2E2A8B";
+		};
+		"7AB1B6DB94B79FD9616232E5" = {
+			"path" = "AsunaTracks/Shared/ProgressActivityAttributes.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"4E25F0223D808204DD24773B" = {
+			"path" = "AsunaTracks/iOS/LibraryView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"AF0000000000000000000002" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000001";
+		};
+		"222C3C7CD11F8BE85FFD4287" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F66C75D8990D86E8C6CA7523";
+		};
+		"1EA63D48ADC833D6850EA06A" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"CCA3F4D16B7112CF1CEFD1D7",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"C078B95EC32F68CEF726F6B1" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"INFOPLIST_FILE" = "AsunaTracks/Widgets/AsunaTracksWidgets-Info.plist";
+				"SKIP_INSTALL" = "YES";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"SDKROOT" = "iphoneos";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
+			};
+		};
+		"E7099109BA730C79E75AF4AA" = {
+			"path" = "AsunaTracks/macOS/AsunaTracksMacWidgets.entitlements";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"E534E889F9C9B4FFA5552571" = {
+			"path" = "AsunaTracks/macOS/MacCompatibility.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"61E6CB5A2C2C369243B40C02" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E534E889F9C9B4FFA5552571";
+		};
+		"FF1695F8B698D0FDFF9A7E01" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8D5935296970F7B8B4F4644E";
+		};
+		"0047A088F2540529FE30404B" = {
+			"productType" = "com.apple.product-type.app-extension";
+			"productReference" = "F2D44A950E47C22DAF1890DF";
+			"buildConfigurationList" = "DE6A16A242C0DCDD224F32CE";
+			"productName" = "AsunaTracksWatchWidgets";
+			"isa" = "PBXNativeTarget";
+			"buildPhases" = (
+				"F5B7E7B94C5B26977A6DC9DA",
+				"DFC30D071D59DFB86F511D5E",
+				"1EA63D48ADC833D6850EA06A",
+			);
+			"dependencies" = (
+			);
+			"name" = "AsunaTracksWatchWidgets";
+			"buildRules" = (
+			);
+		};
+		"01A9EF8A5C52612723031054" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D9CE6933BD1670817B0BBBFD";
+		};
+		"76F8DEC3DFE0BDB465198890" = {
+			"isa" = "XCConfigurationList";
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+			"buildConfigurations" = (
+				"73EBF6644258C120893E685D",
+				"0B0C687DF8B6B8DC790B519C",
+			);
+		};
+		"9400D359C4416BEC2693924B" = {
+			"path" = "AsunaTracks.app";
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"B5E1387B1075FA4CECE39169" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "5717368688BC38F7B2CCFE6A";
+		};
+		"E69813C8AD310B617BA9071D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "374E1958BF03776AF0296B02";
+		};
+		"73EBF6644258C120893E685D" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "targeted";
+			};
+			"name" = "Debug";
+		};
+		"F0DE4B72C164F684DADBED9A" = {
+			"path" = "AsunaTracks/iOS/MediaDetailView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"846C774775F922F10022AB59" = {
+			"path" = "AsunaTracks/Shared/ProgressPublisher.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"CA4096694F6426BD48DF603A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "49A5E97F2342584A8452B334";
+		};
+		"0A3656C730AAA9AE1FE5A4AC" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"MARKETING_VERSION" = "1.0";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"INFOPLIST_KEY_CFBundleShortVersionString" = "1.0";
+				"INFOPLIST_KEY_CFBundleVersion" = "5";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
+				"SDKROOT" = "watchos";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "YES";
+				"INFOPLIST_KEY_WKApplication" = "YES";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"SWIFT_VERSION" = "5.0";
+				"SKIP_INSTALL" = "YES";
+				"INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp" = "YES";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/Watch/Watch-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"0F686BDDFAA0A2C4BD3220FD" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"INFOPLIST_FILE" = "AsunaTracks/Widgets/AsunaTracksWidgets-Info.plist";
+				"SKIP_INSTALL" = "YES";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"SDKROOT" = "iphoneos";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
+			};
+		};
+		"43A8F369DEFE76C95BC3BA3B" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "58AAD86CD111D3BDD36C6A03";
+			"targetProxy" = "E7AB946965C8FE115D1D68ED";
+		};
+		"53BFE87B3AB14EF9EE542838" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"86F3FD6D430C4B9E02E2DE09" = {
+			"path" = "AsunaTracks/macOS/MacRootView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"6BFC44B002B166030E3A6AC0" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"4BB5CDBD7D561F8A6473AC42" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"AC0000000000000000000003",
+				"222C3C7CD11F8BE85FFD4287",
+				"A867A68DD83D4F6C6C8A3546",
+				"AB0000000000000000000001",
+				"AB0000000000000000000002",
+				"C618319614CD7FE62CFE734C",
+				"F16CDA74BA5C3255A597E9F9",
+				"40516C813F3A7DCB4A816353",
+				"4C8BA02B2D1546A2AC2A231E",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"E84B49FE27C5B3AC1D3DF96B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7AB1B6DB94B79FD9616232E5";
+		};
+		"DACD84481FD3E4F581A913D2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F66C75D8990D86E8C6CA7523";
+		};
+		"CD4783AB1593E38E6622AEF5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "846C774775F922F10022AB59";
+		};
+		"0B0C687DF8B6B8DC790B519C" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "targeted";
+			};
+			"name" = "Release";
+		};
+		"96FD33E9CD8F16C25DF4A331" = {
+			"path" = "AsunaTracks/iOS/RichProfileBio.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"7B749CBEB9273DC60248ECEB" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000015";
+		};
+		"F2D44A950E47C22DAF1890DF" = {
+			"path" = "AsunaTracksWatchWidgets.appex";
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"72E464F29CA6F94BD7739CDB" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "49A5E97F2342584A8452B334";
+		};
+		"026E0BA3D76C0ABB5654F8C6" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "1AB84B322ADA8FE83C80D70A";
+			"targetProxy" = "B70A0417DC0047EB6E6A5C0C";
+		};
+		"9FE18E1BD6BAD9D7B9743DED" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "5717368688BC38F7B2CCFE6A";
+		};
+		"CCA3F4D16B7112CF1CEFD1D7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "374E1958BF03776AF0296B02";
+		};
+		"8FA9FBA5FFCFEA5D6757B29F" = {
+			"path" = "AsunaTracks/macOS/AsunaTracksMacWidgets-Info.plist";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"sourceTree" = "<group>";
+		};
+		"AB0000000000000000000001" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2D2BAD034212BEDB6D39CE98";
+		};
+		"368FA148E18D66AE8C417002" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/macOS/AsunaTracksMacWidgets.entitlements";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
+				"SUPPORTED_PLATFORMS" = "macosx";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SDKROOT" = "macosx";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				"SWIFT_VERSION" = "5.0";
+				"PRODUCT_NAME" = "AsunaTracksMacWidgets";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"CODE_SIGN_IDENTITY" = "Apple Development";
+				"SKIP_INSTALL" = "YES";
+				"ENABLE_APP_SANDBOX" = "YES";
+				"ENABLE_HARDENED_RUNTIME" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/macOS/AsunaTracksMacWidgets-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+			};
+		};
+		"8D5935296970F7B8B4F4644E" = {
+			"path" = "AsunaTracks/Shared/ProgressSnapshot.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"AC0000000000000000000004" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC0000000000000000000001";
+		};
+		"AC0000000000000000000011" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC0000000000000000000010";
+		};
+		"D486F7A94C9A7F26EFB7CE2C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F66C75D8990D86E8C6CA7523";
+		};
+		"8A1EED22144C3F04485A69EE" = {
+			"buildActionMask" = "2147483647";
+			"dstSubfolderSpec" = "16";
+			"isa" = "PBXCopyFilesBuildPhase";
+			"runOnlyForDeploymentPostprocessing" = "0";
+			"dstPath" = "$(CONTENTS_FOLDER_PATH)/Watch";
+			"files" = (
+				"E752E6724CF5DFA5D8A75744",
+			);
+			"name" = "Embed Watch Content";
+		};
+		"607B570A1300DEECB143FF4E" = {
+			"path" = "AsunaTracks/iOS/AppStore.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"F66C75D8990D86E8C6CA7523" = {
+			"path" = "AsunaTracks/Shared/Models.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"A1B4D443073ECC1A9C27C078" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9640626CDE789CA82576632A";
+		};
+		"22C5DCA54D5ACCFD3366888D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "49A5E97F2342584A8452B334";
+		};
+		"9640626CDE789CA82576632A" = {
+			"path" = "AsunaTracks/iOS/StatusStyle.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"0D6E4079E36703EBD37C0072" = {
+			"isa" = "PBXGroup";
+			"sourceTree" = "<group>";
+			"children" = (
+				"AC0000000000000000000010",
+				"AC0000000000000000000002",
+				"AC0000000000000000000001",
+				"AB0000000000000000000003",
+				"F66C75D8990D86E8C6CA7523",
+				"9B1CE08E975C338A3C00CFF4",
+				"2D2BAD034212BEDB6D39CE98",
+				"607B570A1300DEECB143FF4E",
+				"7EB4A02081A493E07679E44C",
+				"AF0000000000000000000011",
+				"AF0000000000000000000013",
+				"AF0000000000000000000015",
+				"AF0000000000000000000001",
+				"4E25F0223D808204DD24773B",
+				"5717368688BC38F7B2CCFE6A",
+				"0A3E27B8CA818264D75C8D81",
+				"9640626CDE789CA82576632A",
+				"96FD33E9CD8F16C25DF4A331",
+				"1426ECDADA0F96D547069F66",
+				"196036A60739A8BABA43FAF3",
+				"D9CE6933BD1670817B0BBBFD",
+				"4C63730A5165A8AB8A2E2A8B",
+				"D6B40BADC698867BFC90DBA1",
+				"8D5935296970F7B8B4F4644E",
+				"846C774775F922F10022AB59",
+				"7AB1B6DB94B79FD9616232E5",
+				"47BFD39673BD1E915205B5FC",
+				"49A5E97F2342584A8452B334",
+				"3A58133128AFB9B615CD33AD",
+				"D9C7C8231B56502F4985E1F1",
+				"055FC164CE48D8F247B04AE8",
+				"1DEBA7A79D32A4581205E3DD",
+				"F0DE4B72C164F684DADBED9A",
+				"80D7C1CFA07259691614D9C0",
+				"2317875B7D530CAD370F5510",
+				"534C2299C170C18D1C087CEC",
+				"8EB8F00CF3D64A13033CCC15",
+				"86F3FD6D430C4B9E02E2DE09",
+				"0F1806D03BF30798F2AA71CF",
+				"E534E889F9C9B4FFA5552571",
+				"374E1958BF03776AF0296B02",
+				"8FA9FBA5FFCFEA5D6757B29F",
+				"E7099109BA730C79E75AF4AA",
+				"BA5CC0E8D7CCF0C5923D50BB",
+				"678F7E7215B445C994D57620",
+			);
+		};
+		"4C63730A5165A8AB8A2E2A8B" = {
+			"path" = "AsunaTracks/iOS/OpenedMediaView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"B6576A1CD2FA5386D491AB2B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "1426ECDADA0F96D547069F66";
+		};
+		"AF0000000000000000000016" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000015";
+		};
+		"0F1806D03BF30798F2AA71CF" = {
+			"path" = "AsunaTracks/macOS/AsunaTracksMacApp.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"21DAB3D4355869CE21897143" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "196036A60739A8BABA43FAF3";
+		};
+		"2317875B7D530CAD370F5510" = {
+			"path" = "AsunaTracks/macOS/AsunaTracksMac-Info.plist";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"sourceTree" = "<group>";
+		};
+		"B70A0417DC0047EB6E6A5C0C" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"remoteGlobalIDString" = "1AB84B322ADA8FE83C80D70A";
+			"remoteInfo" = "AsunaTracksMacWidgets";
+			"proxyType" = "1";
+		};
+		"7E3780BD3C3E1BBBA62B2B89" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000011";
+		};
+		"AF0000000000000000000012" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000011";
+		};
+		"9B36460DF98BF07968A94926" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7EB4A02081A493E07679E44C";
+		};
+		"AF0000000000000000000001" = {
+			"path" = "AsunaTracks/iOS/ProfileView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"EF0F281E8DE6C5633E634ABB" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"MARKETING_VERSION" = "1.0";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
+				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"INFOPLIST_KEY_CFBundleShortVersionString" = "1.0";
+				"INFOPLIST_KEY_CFBundleVersion" = "5";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "YES";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
+				"INFOPLIST_KEY_NSSupportsLiveActivities" = "YES";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations" = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/iOS/App-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"DC4CC11A9123ADC89D170742" = {
+			"path" = "AsunaTracksMacWidgets.appex";
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"2840333B28E7273FE27C7AE1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC0000000000000000000001";
+		};
+		"FE3A3468A9FF828E5DE9E1BF" = {
+			"isa" = "XCConfigurationList";
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+			"buildConfigurations" = (
+				"20D202995F54118B077BD97B",
+				"29CB3B1051376F84AF7F72BE",
+			);
+		};
+		"452DBDFD29735A9540C72AB6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2D2BAD034212BEDB6D39CE98";
+		};
+		"59821F34876A1AB9640F825A" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"48304C4623223213CAAB7EB5",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"E752E6724CF5DFA5D8A75744" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CA7728C010004EB70FA8BEBC";
+			"settings" = {
+				"ATTRIBUTES" = (
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"686CDE2C8430B3CB234B3631" = {
+			"isa" = "XCConfigurationList";
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+			"buildConfigurations" = (
+				"C078B95EC32F68CEF726F6B1",
+				"0F686BDDFAA0A2C4BD3220FD",
+			);
+		};
+		"1AB4ACA7DB921F13588CD950" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"9D027D27254F399CDB878E1A",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"49A5E97F2342584A8452B334" = {
+			"path" = "AsunaTracks/Widgets/AsunaWidgets.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"654085359B20B8AD4A3AB7B3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "846C774775F922F10022AB59";
+		};
+		"D9CE6933BD1670817B0BBBFD" = {
+			"path" = "AsunaTracks/iOS/ProgressLiveActivity.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"466DAA91FC8EC7F6309ADD9F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8D5935296970F7B8B4F4644E";
+		};
+		"1426ECDADA0F96D547069F66" = {
+			"path" = "AsunaTracks/iOS/CommunityView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"D6B40BADC698867BFC90DBA1" = {
+			"path" = "AsunaTracks/Shared/ProfileBio.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"9DB718D4DE57672E81BB7762" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8D5935296970F7B8B4F4644E";
+		};
+		"CEEB71152E589AE486F1BD38" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "1426ECDADA0F96D547069F66";
+		};
+		"DC1D3FC8CA2FE2900A61CD84" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"MARKETING_VERSION" = "1.0";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
+				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
+				"INFOPLIST_KEY_CFBundleVersion" = "5";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"INFOPLIST_KEY_CFBundleShortVersionString" = "1.0";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
+				"INFOPLIST_KEY_NSSupportsLiveActivities" = "YES";
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations" = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation" = "YES";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/iOS/App-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+			};
+			"name" = "Release";
+		};
+		"126CF55F530547D73A9D4146" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D9CE6933BD1670817B0BBBFD";
+		};
+		"85FA841B2B7C0672A7F0EE49" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "607B570A1300DEECB143FF4E";
+		};
+		"5717368688BC38F7B2CCFE6A" = {
+			"path" = "AsunaTracks/iOS/RootView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"B7DA2C068ED448672C829AF3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4C63730A5165A8AB8A2E2A8B";
+		};
+		"4BD74809A80A3C084B8C4CA7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8D5935296970F7B8B4F4644E";
+		};
+		"77374F295D04641E2F8820B6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D6B40BADC698867BFC90DBA1";
+		};
+		"FDCC0C2323D0A53D0EC69345" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"AC0000000000000000000006",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"9B1CE08E975C338A3C00CFF4" = {
+			"path" = "AsunaTracks/Watch/AsunaTracksWatchApp.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"0627B22677C118C95BDE5831" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F0DE4B72C164F684DADBED9A";
+		};
+		"055FC164CE48D8F247B04AE8" = {
+			"path" = "AsunaTracks/iOS/App-Info.plist";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"sourceTree" = "<group>";
+		};
+		"AC0000000000000000000003" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC0000000000000000000001";
+		};
+		"25D17DF6F14C1A95F9872D71" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F0DE4B72C164F684DADBED9A";
+		};
+		"088C5F01024354FC1D22D707" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"CA4096694F6426BD48DF603A",
+				"2CF1614D5EEA17DCD2D4007B",
+				"A3B78E2456523CE8DB576597",
+				"C3429D16F5CA492F80AEB5D8",
+				"C47BD11B228A4F3891ADAC29",
+				"20440AF3B2CC4CE9A876196A",
+				"5C5426532C054D5F95D99E6C",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"196036A60739A8BABA43FAF3" = {
+			"path" = "AsunaTracks/iOS/UserProfileView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"AC0000000000000000000010" = {
+			"path" = "AsunaTracks/iOS/BrowseView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"C6ABC367E6AF16A2E34F02E2" = {
+			"buildActionMask" = "2147483647";
+			"dstSubfolderSpec" = "13";
+			"isa" = "PBXCopyFilesBuildPhase";
+			"runOnlyForDeploymentPostprocessing" = "0";
+			"dstPath" = "";
+			"name" = "Embed Widgets";
+			"files" = (
+				"3649FD18AFB20C7C2FC9F0B1",
+			);
+		};
+		"534C2299C170C18D1C087CEC" = {
+			"path" = "AsunaTracks/macOS/AsunaTracksMac.entitlements";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"52BF554950BA189FAAFC83CF" = {
+			"productType" = "com.apple.product-type.application";
+			"productReference" = "CA7728C010004EB70FA8BEBC";
+			"buildConfigurationList" = "8DDBB3FB21E54245BA150156";
+			"productName" = "AsunaTracksWatch";
+			"isa" = "PBXNativeTarget";
+			"buildPhases" = (
+				"4BB5CDBD7D561F8A6473AC42",
+				"6AFAFCBBC18CBC16EECF6956",
+				"FDCC0C2323D0A53D0EC69345",
+				"C6ABC367E6AF16A2E34F02E2",
+			);
+			"dependencies" = (
+				"8D4A7DC9C7171AC98EDA8749",
+			);
+			"name" = "AsunaTracksWatch";
+			"buildRules" = (
+			);
+		};
+		"238DF9CF0608F018ECC66E2A" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"245934CAA160029FBC4A04CC",
+				"466DAA91FC8EC7F6309ADD9F",
+				"77374F295D04641E2F8820B6",
+				"DACD84481FD3E4F581A913D2",
+				"2840333B28E7273FE27C7AE1",
+				"7E3780BD3C3E1BBBA62B2B89",
+				"CD4783AB1593E38E6622AEF5",
+				"62DFE58A8DD0D163BE13ACF6",
+				"4D78EEC403B3A64B9C556538",
+				"126CF55F530547D73A9D4146",
+				"3451920B58BD53532E1DE99B",
+				"6FB66B5D72E85A67690F2F50",
+				"452DBDFD29735A9540C72AB6",
+				"7B749CBEB9273DC60248ECEB",
+				"21DAB3D4355869CE21897143",
+				"B5E1387B1075FA4CECE39169",
+				"34F4D3B134ADE5734BDED7F7",
+				"EC4BF0CE69583BC17E067925",
+				"A33C0186C44C835FE85CCA8C",
+				"CEEB71152E589AE486F1BD38",
+				"25D17DF6F14C1A95F9872D71",
+				"7CB1C7832B789F924B36436B",
+				"63F18A09AEC78C356D8FB651",
+				"022DCC9BDBDD304B786C93F8",
+				"E4B389BD5AAC405F4EB87F9A",
+				"BE61D7B5825670C0F3EC3C9F",
+				"E1ADCDC23EB812B1DEC09E6B",
+				"61E6CB5A2C2C369243B40C02",
+				"54F263A180A343D984115FAA",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"AF0000000000000000000015" = {
+			"path" = "AsunaTracks/iOS/ScheduleView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"244210E48437B6556980A702" = {
+			"buildConfigurationList" = "76F8DEC3DFE0BDB465198890";
+			"targets" = (
+				"95887D01F52073A473672816",
+				"52BF554950BA189FAAFC83CF",
+				"58AAD86CD111D3BDD36C6A03",
+				"0047A088F2540529FE30404B",
+				"89DB81F6E8C0A635BFD38135",
+				"1AB84B322ADA8FE83C80D70A",
+			);
+			"developmentRegion" = "en";
+			"knownRegions" = (
+				"en",
+				"Base",
+			);
+			"isa" = "PBXProject";
+			"compatibilityVersion" = "Xcode 14.0";
+			"productRefGroup" = "0A3E27B8CA818264D75C8D81";
+			"projectDirPath" = "";
+			"attributes" = {
+				"LastUpgradeCheck" = "2700";
+				"BuildIndependentTargetsInParallel" = "YES";
+			};
+			"hasScannedForEncodings" = "0";
+			"projectRoot" = "";
+			"mainGroup" = "0D6E4079E36703EBD37C0072";
+		};
+		"3649FD18AFB20C7C2FC9F0B1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F2D44A950E47C22DAF1890DF";
+			"settings" = {
+				"ATTRIBUTES" = (
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"E1ADCDC23EB812B1DEC09E6B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0F1806D03BF30798F2AA71CF";
+		};
+		"75B55201D33020D1FD5BDA40" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BA5CC0E8D7CCF0C5923D50BB";
+		};
+		"AF0000000000000000000011" = {
+			"path" = "AsunaTracks/Shared/SiteModels.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"8E60FFB9200E20F36AD2AFA9" = {
+			"path" = "AsunaTracks.app";
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"2D2BAD034212BEDB6D39CE98" = {
+			"path" = "AsunaTracks/iOS/APIClient.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"3A58133128AFB9B615CD33AD" = {
+			"path" = "AsunaTracks/AsunaTracks.entitlements";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"DFC30D071D59DFB86F511D5E" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"C618319614CD7FE62CFE734C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8D5935296970F7B8B4F4644E";
+		};
+		"8EB8F00CF3D64A13033CCC15" = {
+			"path" = "AsunaTracks/macOS/CarouselTrackpadInput.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"0280F9FE7C6CFA2086CA3597" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4E25F0223D808204DD24773B";
+		};
+		"BA5CC0E8D7CCF0C5923D50BB" = {
+			"path" = "AsunaTracks/Widgets/WidgetSchedule.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"F5B7E7B94C5B26977A6DC9DA" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"72E464F29CA6F94BD7739CDB",
+				"9DB718D4DE57672E81BB7762",
+				"E84B49FE27C5B3AC1D3DF96B",
+				"75B55201D33020D1FD5BDA40",
+				"FCDEC802564F4B87A35F18B4",
+				"E87757F9586246D285E153E4",
+				"B5B473F9F56548B8880C7FF4",
+				"B1CD4BD632724C64A53F7A04",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"42F899F767C7441DE9BFD67D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7AB1B6DB94B79FD9616232E5";
+		};
+		"B91AB7813774CB0B4BFBD7B1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "96FD33E9CD8F16C25DF4A331";
+		};
+		"95887D01F52073A473672816" = {
+			"productType" = "com.apple.product-type.application";
+			"productReference" = "8E60FFB9200E20F36AD2AFA9";
+			"buildConfigurationList" = "8AD2DB74AAD5C51F0D932250";
+			"productName" = "AsunaTracks";
+			"isa" = "PBXNativeTarget";
+			"buildPhases" = (
+				"7FC7062C4F5B92B54203A866",
+				"C55BC714F387EC225C498785",
+				"6F037AAE77DB0AC4149446D0",
+				"8A1EED22144C3F04485A69EE",
+				"7EE2102452403E297000E8A4",
+			);
+			"dependencies" = (
+				"F26350DAFE3F19AABFD69AC4",
+				"43A8F369DEFE76C95BC3BA3B",
+			);
+			"name" = "AsunaTracks";
+			"buildRules" = (
+			);
+		};
+		"DE6A16A242C0DCDD224F32CE" = {
+			"isa" = "XCConfigurationList";
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+			"buildConfigurations" = (
+				"0A01FEC8B6AEC2389FC4966D",
+				"6AB3F8F709C11D29CF6DAAFA",
+			);
+		};
+		"40516C813F3A7DCB4A816353" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7AB1B6DB94B79FD9616232E5";
+		};
+		"E4B389BD5AAC405F4EB87F9A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8EB8F00CF3D64A13033CCC15";
+		};
+		"AB0000000000000000000003" = {
+			"path" = "AsunaTracks/Watch/WatchStore.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"AC0000000000000000000006" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC0000000000000000000002";
+		};
+		"20D202995F54118B077BD97B" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/macOS/AsunaTracksMac.entitlements";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"EXECUTABLE_NAME" = "AsunaTracksMac";
+				"SUPPORTED_PLATFORMS" = "macosx";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SDKROOT" = "macosx";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				"SWIFT_VERSION" = "5.0";
+				"PRODUCT_NAME" = "AsunaTracks";
+				"APPLICATION_EXTENSION_API_ONLY" = "NO";
+				"CODE_SIGN_IDENTITY" = "Apple Development";
+				"SKIP_INSTALL" = "NO";
+				"ENABLE_APP_SANDBOX" = "YES";
+				"ENABLE_HARDENED_RUNTIME" = "YES";
+				"INFOPLIST_FILE" = "AsunaTracks/macOS/AsunaTracksMac-Info.plist";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+			};
+		};
+		"1241936D4DD3AAD68FE7BFBD" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"remoteGlobalIDString" = "52BF554950BA189FAAFC83CF";
+			"remoteInfo" = "AsunaTracksWatch";
+			"proxyType" = "1";
+		};
+		"374E1958BF03776AF0296B02" = {
+			"path" = "AsunaTracks/Shared/AsunaTracksLogo.png";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "image.png";
+			"sourceTree" = "<group>";
+		};
+		"AC0000000000000000000002" = {
+			"path" = "AsunaTracks/Shared/BrandAssets.xcassets";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"62DFE58A8DD0D163BE13ACF6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC0000000000000000000010";
+		};
+		"4D78EEC403B3A64B9C556538" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000013";
+		};
+		"7FC7062C4F5B92B54203A866" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"AF0000000000000000000012",
+				"AF0000000000000000000014",
+				"AF0000000000000000000016",
+				"AF0000000000000000000002",
+				"AC0000000000000000000011",
+				"AC0000000000000000000004",
+				"D486F7A94C9A7F26EFB7CE2C",
+				"95800F10FD06FFC976C21433",
+				"85FA841B2B7C0672A7F0EE49",
+				"9B36460DF98BF07968A94926",
+				"0280F9FE7C6CFA2086CA3597",
+				"9FE18E1BD6BAD9D7B9743DED",
+				"A1B4D443073ECC1A9C27C078",
+				"B91AB7813774CB0B4BFBD7B1",
+				"B6576A1CD2FA5386D491AB2B",
+				"3DA69AAADD252CFA6E9A54F7",
+				"01A9EF8A5C52612723031054",
+				"B7DA2C068ED448672C829AF3",
+				"BB03D68E07BB7214E0318892",
+				"4BD74809A80A3C084B8C4CA7",
+				"654085359B20B8AD4A3AB7B3",
+				"42F899F767C7441DE9BFD67D",
+				"0627B22677C118C95BDE5831",
+				"8FB72ED78846ADAE7C9F9B34",
+				"748AA9EBCEFB464397450C85",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"235C2ADA9C97016F8F986561" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BA5CC0E8D7CCF0C5923D50BB";
+		};
+		"A3B78E2456523CE8DB576597" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BA5CC0E8D7CCF0C5923D50BB";
+		};
+		"EC4BF0CE69583BC17E067925" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4E25F0223D808204DD24773B";
+		};
+		"63F18A09AEC78C356D8FB651" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7EB4A02081A493E07679E44C";
+		};
+		"A6719CD05162B7A6D38D08E1" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"E69813C8AD310B617BA9071D",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"7CB1C7832B789F924B36436B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "607B570A1300DEECB143FF4E";
+		};
+		"58AAD86CD111D3BDD36C6A03" = {
+			"productType" = "com.apple.product-type.app-extension";
+			"productReference" = "594EB604481615CBE0E3454D";
+			"buildConfigurationList" = "686CDE2C8430B3CB234B3631";
+			"productName" = "AsunaTracksWidgets";
+			"isa" = "PBXNativeTarget";
+			"buildPhases" = (
+				"B2C4DE64978B99DCF5A270BB",
+				"DA837F891074D5A57B837B6D",
+				"59821F34876A1AB9640F825A",
+			);
+			"dependencies" = (
+			);
+			"name" = "AsunaTracksWidgets";
+			"buildRules" = (
+			);
+		};
+		"CA7728C010004EB70FA8BEBC" = {
+			"path" = "AsunaTracksWatch.app";
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"AF0000000000000000000014" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AF0000000000000000000013";
+		};
+		"3DA69AAADD252CFA6E9A54F7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "196036A60739A8BABA43FAF3";
+		};
+		"48304C4623223213CAAB7EB5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "374E1958BF03776AF0296B02";
+		};
+		"7EB4A02081A493E07679E44C" = {
+			"path" = "AsunaTracks/iOS/GenreMixView.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"E7AB946965C8FE115D1D68ED" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"remoteGlobalIDString" = "58AAD86CD111D3BDD36C6A03";
+			"remoteInfo" = "AsunaTracksWidgets";
+			"proxyType" = "1";
+		};
+		"36161F9858D62D87F3720AE1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "594EB604481615CBE0E3454D";
+			"settings" = {
+				"ATTRIBUTES" = (
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"6AB3F8F709C11D29CF6DAAFA" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"DEVELOPMENT_TEAM" = "B6NP2879G2";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"INFOPLIST_FILE" = "AsunaTracks/Widgets/AsunaTracksWatchWidgets-Info.plist";
+				"SKIP_INSTALL" = "YES";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"CODE_SIGN_ENTITLEMENTS" = "AsunaTracks/AsunaTracks.entitlements";
+				"SDKROOT" = "watchos";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"SWIFT_VERSION" = "5.0";
+				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
+				"CURRENT_PROJECT_VERSION" = "5";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
+			};
+		};
+		"2115071FA65B9D3CF84426D0" = {
+			"isa" = "XCConfigurationList";
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+			"buildConfigurations" = (
+				"368FA148E18D66AE8C417002",
+				"9FB9B18B559152A16F82C96A",
+			);
+		};
+		"6F037AAE77DB0AC4149446D0" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"AC0000000000000000000005",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"022DCC9BDBDD304B786C93F8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "96FD33E9CD8F16C25DF4A331";
+		};
+		"F26350DAFE3F19AABFD69AC4" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "52BF554950BA189FAAFC83CF";
+			"targetProxy" = "1241936D4DD3AAD68FE7BFBD";
+		};
+		"BE61D7B5825670C0F3EC3C9F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "86F3FD6D430C4B9E02E2DE09";
+		};
+		"DA837F891074D5A57B837B6D" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"8D4A7DC9C7171AC98EDA8749" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "0047A088F2540529FE30404B";
+			"targetProxy" = "A045C669182ABDFD58A29EBD";
+		};
+		"6FB66B5D72E85A67690F2F50" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "80D7C1CFA07259691614D9C0";
+		};
+		"678F7E7215B445C994D57620" = {
+			"isa" = "PBXFileReference";
+			"path" = "AsunaTracks/Shared/WidgetProgressAction.swift";
+			"sourceTree" = "SOURCE_ROOT";
+			"lastKnownFileType" = "sourcecode.swift";
+		};
+		"54F263A180A343D984115FAA" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "678F7E7215B445C994D57620";
+		};
+		"C3429D16F5CA492F80AEB5D8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "678F7E7215B445C994D57620";
+		};
+		"C47BD11B228A4F3891ADAC29" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F66C75D8990D86E8C6CA7523";
+		};
+		"20440AF3B2CC4CE9A876196A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "846C774775F922F10022AB59";
+		};
+		"5C5426532C054D5F95D99E6C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2D2BAD034212BEDB6D39CE98";
+		};
+		"FCDEC802564F4B87A35F18B4" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "678F7E7215B445C994D57620";
+		};
+		"E87757F9586246D285E153E4" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F66C75D8990D86E8C6CA7523";
+		};
+		"B5B473F9F56548B8880C7FF4" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "846C774775F922F10022AB59";
+		};
+		"B1CD4BD632724C64A53F7A04" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2D2BAD034212BEDB6D39CE98";
+		};
+		"4C8BA02B2D1546A2AC2A231E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "678F7E7215B445C994D57620";
+		};
+		"748AA9EBCEFB464397450C85" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "678F7E7215B445C994D57620";
+		};
+		"719BD1807EA14E9093A174B2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "678F7E7215B445C994D57620";
+		};
+		"1E8B742E517E49ED9C1F224E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F66C75D8990D86E8C6CA7523";
+		};
+		"A0FF6B6A671D45579F4C1946" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "846C774775F922F10022AB59";
+		};
+		"C0C435E0A0084E239F9AC059" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2D2BAD034212BEDB6D39CE98";
+		};
+	};
+	"rootObject" = "244210E48437B6556980A702";
+}

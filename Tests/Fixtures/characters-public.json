@@ -1,0 +1,59 @@
+{
+  "query": "",
+  "page": 1,
+  "limit": 4,
+  "total": 119178,
+  "has_next": true,
+  "items": [
+    {
+      "id": 1051003,
+      "mal_id": 44167,
+      "name": "Yuko",
+      "name_kanji": null,
+      "image_url": "https://cdn.myanimelist.net/images/characters/7/121514.webp",
+      "about": null,
+      "voice_actors": [],
+      "image_fallbacks": [],
+      "aliases": []
+    },
+    {
+      "id": 1051002,
+      "mal_id": 43649,
+      "name": "Umoregi, Shingo",
+      "name_kanji": null,
+      "image_url": "https://cdn.myanimelist.net/images/characters/15/564505.webp",
+      "about": null,
+      "voice_actors": [],
+      "image_fallbacks": [],
+      "aliases": [
+        "Shingo Umoregi"
+      ]
+    },
+    {
+      "id": 1051001,
+      "mal_id": 233093,
+      "name": "Umoregi, Etsuko",
+      "name_kanji": null,
+      "image_url": "https://cdn.myanimelist.net/images/characters/5/539695.webp",
+      "about": null,
+      "voice_actors": [],
+      "image_fallbacks": [],
+      "aliases": [
+        "Etsuko Umoregi"
+      ]
+    },
+    {
+      "id": 1051000,
+      "mal_id": 270316,
+      "name": "Tsuchiya, Ichika",
+      "name_kanji": null,
+      "image_url": "https://cdn.myanimelist.net/images/characters/4/590596.webp",
+      "about": null,
+      "voice_actors": [],
+      "image_fallbacks": [],
+      "aliases": [
+        "Ichika Tsuchiya"
+      ]
+    }
+  ]
+}
