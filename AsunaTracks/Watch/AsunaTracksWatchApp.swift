@@ -52,19 +52,38 @@ struct WatchLibraryView: View {
                         Text(store.user == nil ? "Your anime and manga, on your wrist." : "Add a title to your in-progress list on AsunaTracks.").font(.footnote).foregroundStyle(.secondary)
                     }.padding(.vertical)
                 }
-                ForEach(store.entries) { entry in
-                    NavigationLink { WatchProgressView(id: entry.id) } label: {
-                        HStack(spacing: 10) {
-                            WatchCover(media: entry.media)
-                                .frame(width: 48, height: 70)
-                                .clipShape(.rect(cornerRadius: 9))
-                            VStack(alignment: .leading, spacing: 6) {
-                            Text(entry.media.displayTitle).font(.headline).lineLimit(2)
-                            Text("\(max(0, entry.progress ?? 0)) / \(entry.media.total > 0 ? String(entry.media.total) : "?") \(entry.media.unit)")
-                                .font(.caption).monospacedDigit().foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
-                            if entry.media.total > 0 { ProgressView(value: Double(max(0, min(entry.progress ?? 0, entry.media.total))), total: Double(entry.media.total)).tint(store.accent) }
+                ForEach(["anime", "manga"], id: \.self) { kind in
+                    let entries = store.entries.filter { $0.media.mediaType == kind }
+                    if !entries.isEmpty {
+                        Section(kind == "anime" ? "Continue watching" : "Continue reading") {
+                            ForEach(entries) { entry in
+                                VStack(alignment: .leading, spacing: 10) {
+                                    NavigationLink { WatchProgressView(id: entry.id) } label: {
+                                        HStack(alignment: .top, spacing: 10) {
+                                            WatchCover(media: entry.media).frame(width: 48, height: 70).clipShape(.rect(cornerRadius: 9))
+                                            VStack(alignment: .leading, spacing: 6) {
+                                                Text(entry.media.displayTitle).font(.headline).lineLimit(3)
+                                                Text("\(max(0, entry.progress ?? 0)) / \(entry.media.total > 0 ? String(entry.media.total) : "?") \(entry.media.unit)")
+                                                    .font(.caption).monospacedDigit().foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+                                            }
+                                        }
+                                    }
+                                    if entry.media.total > 0 {
+                                        ProgressView(value: Double(max(0, min(entry.progress ?? 0, entry.media.total))), total: Double(entry.media.total)).tint(store.accent)
+                                    }
+                                    if entry.canAdvance {
+                                        Button {
+                                            Task { await store.advance(id: entry.id) }
+                                        } label: {
+                                            Label("+1 · \(kind == "anime" ? "Episode" : "Chapter") \((entry.progress ?? 0) + 1)", systemImage: "checkmark")
+                                                .font(.caption.bold()).frame(maxWidth: .infinity, minHeight: 28)
+                                        }.buttonStyle(.glass)
+                                            .disabled(store.loading || store.needsRefresh || store.user == nil)
+                                            .accessibilityLabel("Mark \(kind == "anime" ? "episode" : "chapter") \((entry.progress ?? 0) + 1) for \(entry.media.displayTitle)")
+                                    }
+                                }.padding(.vertical, 4)
                             }
-                        }.padding(.vertical, 4)
+                        }
                     }
                 }
                 if let user = store.user {
@@ -121,6 +140,10 @@ struct WatchProgressView: View {
                         } currentValueLabel: { Text("\(entry.progress ?? 0)") }
                             .gaugeStyle(.accessoryCircular).tint(store.accent).scaleEffect(1.25).padding(12)
                     } else { Text("\(entry.progress ?? 0) \(entry.media.unit)").font(.title2.bold()) }
+                    if entry.canAdvance {
+                        Text("Up next · \(entry.media.mediaType == "anime" ? "Episode" : "Chapter") \((entry.progress ?? 0) + 1)")
+                            .font(.subheadline.bold()).foregroundStyle(store.accent)
+                    }
                     Text(store.needsRefresh ? "Refresh your list before logging again." : "Updates AsunaTracks directly. An internet connection is required.").font(.caption2).foregroundStyle(.secondary).multilineTextAlignment(.center)
                 }.padding(.horizontal, 8)
             } else { Text("All caught up! Refresh to see your current titles.").padding() }

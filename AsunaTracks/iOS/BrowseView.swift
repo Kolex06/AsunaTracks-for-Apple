@@ -248,7 +248,7 @@ struct CharacterGrid: View {
     let items: [AsunaCharacter]
     @Environment(\.dynamicTypeSize) private var typeSize
     var body: some View {
-        LazyVGrid(columns: typeSize.isAccessibilitySize ? [GridItem(.flexible())] : [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 18)], spacing: 24) {
+        LazyVGrid(columns: typeSize.isAccessibilitySize ? [GridItem(.flexible(), alignment: .top)] : [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 18, alignment: .top)], spacing: 24) {
             ForEach(items) { character in
                 NavigationLink { CharacterDetailView(initial: character) } label: { CharacterTile(character: character) }
                     .buttonStyle(.plain)

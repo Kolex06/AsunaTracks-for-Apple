@@ -1,0 +1,430 @@
+{
+  "items": [
+    {
+      "id": 26,
+      "media_type": "anime",
+      "title": "Shingeki no Kyojin",
+      "title_english": "Attack on Titan",
+      "image_url": "https://cdn.myanimelist.net/images/anime/10/47347l.webp",
+      "score": 8.58,
+      "status": "Finished Airing",
+      "type": "TV",
+      "episodes": 25,
+      "chapters": 0,
+      "year": 2013,
+      "asunatracks_score": {
+        "score": 93.3,
+        "score_10": 9.3,
+        "rating": 9.3,
+        "count": 9
+      },
+      "genres": [
+        {
+          "id": 18,
+          "mal_id": 27,
+          "name": "Shounen",
+          "kind": "demographic"
+        },
+        {
+          "id": 13,
+          "mal_id": 1,
+          "name": "Action",
+          "kind": "genre"
+        },
+        {
+          "id": 96,
+          "mal_id": 46,
+          "name": "Award Winning",
+          "kind": "genre"
+        },
+        {
+          "id": 3,
+          "mal_id": 8,
+          "name": "Drama",
+          "kind": "genre"
+        },
+        {
+          "id": 5,
+          "mal_id": 41,
+          "name": "Suspense",
+          "kind": "genre"
+        },
+        {
+          "id": 55,
+          "mal_id": 58,
+          "name": "Gore",
+          "kind": "theme"
+        },
+        {
+          "id": 91,
+          "mal_id": 38,
+          "name": "Military",
+          "kind": "theme"
+        },
+        {
+          "id": 101,
+          "mal_id": 76,
+          "name": "Survival",
+          "kind": "theme"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "media_type": "anime",
+      "title": "Death Note",
+      "title_english": "Death Note",
+      "image_url": "https://cdn.myanimelist.net/images/anime/1079/138100l.webp",
+      "score": 8.62,
+      "status": "Finished Airing",
+      "type": "TV",
+      "episodes": 37,
+      "chapters": 0,
+      "year": 2006,
+      "asunatracks_score": {
+        "score": 88.1,
+        "score_10": 8.8,
+        "rating": 8.8,
+        "count": 8
+      },
+      "genres": [
+        {
+          "id": 18,
+          "mal_id": 27,
+          "name": "Shounen",
+          "kind": "demographic"
+        },
+        {
+          "id": 87,
+          "mal_id": 37,
+          "name": "Supernatural",
+          "kind": "genre"
+        },
+        {
+          "id": 5,
+          "mal_id": 41,
+          "name": "Suspense",
+          "kind": "genre"
+        },
+        {
+          "id": 7,
+          "mal_id": 40,
+          "name": "Psychological",
+          "kind": "theme"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "media_type": "anime",
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "title_english": "Fullmetal Alchemist: Brotherhood",
+      "image_url": "https://cdn.myanimelist.net/images/anime/1208/94745l.webp",
+      "score": 9.11,
+      "status": "Finished Airing",
+      "type": "TV",
+      "episodes": 64,
+      "chapters": 0,
+      "year": 2009,
+      "asunatracks_score": {
+        "score": 90.0,
+        "score_10": 9.0,
+        "rating": 9.0,
+        "count": 5
+      },
+      "genres": [
+        {
+          "id": 18,
+          "mal_id": 27,
+          "name": "Shounen",
+          "kind": "demographic"
+        },
+        {
+          "id": 13,
+          "mal_id": 1,
+          "name": "Action",
+          "kind": "genre"
+        },
+        {
+          "id": 20,
+          "mal_id": 2,
+          "name": "Adventure",
+          "kind": "genre"
+        },
+        {
+          "id": 3,
+          "mal_id": 8,
+          "name": "Drama",
+          "kind": "genre"
+        },
+        {
+          "id": 1,
+          "mal_id": 10,
+          "name": "Fantasy",
+          "kind": "genre"
+        },
+        {
+          "id": 91,
+          "mal_id": 38,
+          "name": "Military",
+          "kind": "theme"
+        }
+      ]
+    }
+  ],
+  "moods": [
+    {
+      "label": "Action + Adventure + Fantasy",
+      "reason": "Explore this genre mix",
+      "items": [
+        {
+          "id": 28,
+          "media_type": "anime",
+          "title": "Fullmetal Alchemist: Brotherhood",
+          "title_english": "Fullmetal Alchemist: Brotherhood",
+          "image_url": "https://cdn.myanimelist.net/images/anime/1208/94745l.webp",
+          "score": 9.11,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 64,
+          "chapters": 0,
+          "year": 2009,
+          "asunatracks_score": {
+            "score": 90.0,
+            "score_10": 9.0,
+            "rating": 9.0,
+            "count": 5
+          },
+          "genres": [
+            {
+              "id": 18,
+              "mal_id": 27,
+              "name": "Shounen",
+              "kind": "demographic"
+            },
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 20,
+              "mal_id": 2,
+              "name": "Adventure",
+              "kind": "genre"
+            },
+            {
+              "id": 3,
+              "mal_id": 8,
+              "name": "Drama",
+              "kind": "genre"
+            },
+            {
+              "id": 1,
+              "mal_id": 10,
+              "name": "Fantasy",
+              "kind": "genre"
+            },
+            {
+              "id": 91,
+              "mal_id": 38,
+              "name": "Military",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "media_type": "anime",
+          "title": "Sword Art Online",
+          "title_english": "Sword Art Online",
+          "image_url": "https://cdn.myanimelist.net/images/anime/11/39717l.webp",
+          "score": 7.23,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 25,
+          "chapters": 0,
+          "year": 2012,
+          "asunatracks_score": {
+            "score": 86.2,
+            "score_10": 8.6,
+            "rating": 8.6,
+            "count": 13
+          },
+          "genres": [
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 20,
+              "mal_id": 2,
+              "name": "Adventure",
+              "kind": "genre"
+            },
+            {
+              "id": 1,
+              "mal_id": 10,
+              "name": "Fantasy",
+              "kind": "genre"
+            },
+            {
+              "id": 23,
+              "mal_id": 22,
+              "name": "Romance",
+              "kind": "genre"
+            },
+            {
+              "id": 132,
+              "mal_id": 79,
+              "name": "Video Game",
+              "kind": "theme"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Drama + Suspense",
+      "reason": "Explore this genre mix",
+      "items": [
+        {
+          "id": 26,
+          "media_type": "anime",
+          "title": "Shingeki no Kyojin",
+          "title_english": "Attack on Titan",
+          "image_url": "https://cdn.myanimelist.net/images/anime/10/47347l.webp",
+          "score": 8.58,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 25,
+          "chapters": 0,
+          "year": 2013,
+          "asunatracks_score": {
+            "score": 93.3,
+            "score_10": 9.3,
+            "rating": 9.3,
+            "count": 9
+          },
+          "genres": [
+            {
+              "id": 18,
+              "mal_id": 27,
+              "name": "Shounen",
+              "kind": "demographic"
+            },
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 96,
+              "mal_id": 46,
+              "name": "Award Winning",
+              "kind": "genre"
+            },
+            {
+              "id": 3,
+              "mal_id": 8,
+              "name": "Drama",
+              "kind": "genre"
+            },
+            {
+              "id": 5,
+              "mal_id": 41,
+              "name": "Suspense",
+              "kind": "genre"
+            },
+            {
+              "id": 55,
+              "mal_id": 58,
+              "name": "Gore",
+              "kind": "theme"
+            },
+            {
+              "id": 91,
+              "mal_id": 38,
+              "name": "Military",
+              "kind": "theme"
+            },
+            {
+              "id": 101,
+              "mal_id": 76,
+              "name": "Survival",
+              "kind": "theme"
+            }
+          ]
+        },
+        {
+          "id": 11543,
+          "media_type": "anime",
+          "title": "Shingeki no Kyojin Season 2",
+          "title_english": "Attack on Titan Season 2",
+          "image_url": "https://cdn.myanimelist.net/images/anime/4/84177l.webp",
+          "score": 8.55,
+          "status": "Finished Airing",
+          "type": "TV",
+          "episodes": 12,
+          "chapters": 0,
+          "year": 2017,
+          "asunatracks_score": {
+            "score": 91.2,
+            "score_10": 9.1,
+            "rating": 9.1,
+            "count": 8
+          },
+          "genres": [
+            {
+              "id": 18,
+              "mal_id": 27,
+              "name": "Shounen",
+              "kind": "demographic"
+            },
+            {
+              "id": 13,
+              "mal_id": 1,
+              "name": "Action",
+              "kind": "genre"
+            },
+            {
+              "id": 3,
+              "mal_id": 8,
+              "name": "Drama",
+              "kind": "genre"
+            },
+            {
+              "id": 5,
+              "mal_id": 41,
+              "name": "Suspense",
+              "kind": "genre"
+            },
+            {
+              "id": 55,
+              "mal_id": 58,
+              "name": "Gore",
+              "kind": "theme"
+            },
+            {
+              "id": 91,
+              "mal_id": 38,
+              "name": "Military",
+              "kind": "theme"
+            },
+            {
+              "id": 101,
+              "mal_id": 76,
+              "name": "Survival",
+              "kind": "theme"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "personalized": false
+}

@@ -172,7 +172,7 @@ struct MediaTile: View {
                     Text("AsunaTracks")
                     Spacer(minLength: 2)
                     Text(media.asunatracksScore?.displayRating.map { String(format: "%.1f / 10", $0) } ?? "Not rated")
-                }.font(.caption2.weight(.semibold)).foregroundStyle(theme.accent)
+                }.font(.caption2.weight(.semibold)).foregroundStyle(theme.accent).lineLimit(1).minimumScaleFactor(0.85)
                 let count = media.asunatracksScore?.count ?? 0
                 Text(count > 0 ? "\(count) community \(count == 1 ? "rating" : "ratings")" : "No community ratings yet")
                     .font(.caption2).foregroundStyle(.secondary).lineLimit(1)
@@ -190,6 +190,7 @@ struct MediaTile: View {
                 Text(media.total > 0 ? media.totalLabel : "Count to be announced")
                     .font(.caption2).foregroundStyle(.secondary).lineLimit(1)
             }.padding(12).frame(maxWidth: .infinity, alignment: .leading)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .background(scheme == .dark ? AsunaStyle.panel : .white, in: .rect(cornerRadius: 20))
         .clipShape(.rect(cornerRadius: 20))
@@ -203,7 +204,7 @@ struct MediaGrid: View {
     let items: [Media]
     @Environment(\.dynamicTypeSize) private var typeSize
     var body: some View {
-        LazyVGrid(columns: typeSize.isAccessibilitySize ? [GridItem(.flexible())] : [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 18)], alignment: .leading, spacing: 24) {
+        LazyVGrid(columns: typeSize.isAccessibilitySize ? [GridItem(.flexible(), alignment: .top)] : [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 18, alignment: .top)], alignment: .leading, spacing: 24) {
             ForEach(items, id: \.identity) { media in
                 NavigationLink { MediaDetailView(initial: media) } label: { MediaTile(media: media) }.buttonStyle(.plain)
             }
@@ -244,18 +245,34 @@ struct CatalogView: View {
     }
 }
 
+private struct DiscoverRailSection: Identifiable {
+    let id: String
+    let title: String
+    let subtitle: String
+    static let sections: [Self] = [
+        .init(id: "season", title: "Airing this season", subtitle: "A new chapter starts here."),
+        .init(id: "upcoming", title: "Coming next", subtitle: "Upcoming anime to look forward to."),
+        .init(id: "hidden", title: "Hidden gems", subtitle: "Great stories. A little less discovered."),
+        .init(id: "tracked", title: "Most tracked anime", subtitle: "What the AsunaTracks community is following."),
+        .init(id: "anime", title: "Highest rated anime", subtitle: "Explore the website’s highly rated picks."),
+        .init(id: "manga", title: "Manga worth reading", subtitle: "Just one more chapter.")
+    ]
+}
+
 struct DiscoverView: View {
     @Environment(\.accountTheme) private var theme
     @Environment(AppStore.self) private var store
     @State private var items: [Media] = []
     @State private var error: String?
     @State private var loading = true
+    @State private var refreshID = UUID()
+    private var sectionScope: String { "\(store.user?.id ?? -1):\(store.user?.showNsfw ?? false):\(refreshID)" }
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 28) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text("Discover").font(.largeTitle.bold())
-                    Text("Your anime. Your manga. Your next favorite.")
+                    Text("Your taste. Community favorites. Your next story.")
                         .font(.subheadline).foregroundStyle(AsunaStyle.muted)
                 }
                 if !items.isEmpty { FeaturedShowcase(items: items) }
@@ -264,17 +281,28 @@ struct DiscoverView: View {
                         HStack(spacing: 12) { shortcuts }.padding(.vertical, 4)
                     }
                 }.appRailScrollIndicators()
-                if loading { AsunaLoadingView(title: "Finding your next favorite…", accent: theme.accent).frame(maxWidth: .infinity).padding() }
+                ContinueWatchingView().id(store.user?.id)
+                DiscoverForYouContent(compact: true, refreshID: refreshID)
+                if loading && items.isEmpty { AsunaLoadingView(title: "Finding your next favorite…", accent: theme.accent).frame(maxWidth: .infinity).padding() }
                 else if let error { FailureView(message: error) { Task { await load() } } }
-                else {
-                    if !store.entries.filter(\.active).isEmpty {
-                        MediaRail(title: "Continue your story", subtitle: "Pick up right where you left off.", items: store.entries.filter(\.active).map(\.media))
-                    }
-                    MediaRail(title: "In the spotlight", subtitle: "Stories worth getting lost in.", items: items)
-                    DiscoveryRail(title: "Airing this season", subtitle: "A new chapter starts here.", section: "season")
-                    DiscoveryRail(title: "Hidden gems", subtitle: "Great stories. A little less discovered.", section: "hidden")
-                    DiscoveryRail(title: "Manga worth reading", subtitle: "Just one more chapter.", section: "manga")
+                else if !items.isEmpty { MediaRail(title: "In the spotlight", subtitle: "Stories worth getting lost in.", items: items) }
+                ForEach(DiscoverRailSection.sections) { section in
+                    DiscoveryRail(title: section.title, subtitle: section.subtitle, section: section.id)
+                        .id("\(sectionScope):\(section.id)")
                 }
+                DiscoverCharacterRail().id("\(sectionScope):characters")
+                DiscoveryRail(title: "Recently added & updated", subtitle: "Fresh arrivals and changes in the catalog.", section: "recent")
+                    .id("\(sectionScope):recent")
+                NavigationLink { GenresView() } label: {
+                        HStack {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Label("Explore genres", systemImage: "square.grid.2x2").font(.title2.bold())
+                                Text("Find anime and manga by genre, theme, or demographic.").font(.subheadline).foregroundStyle(.secondary)
+                            }
+                            Spacer()
+                            Image(systemName: "arrow.right").foregroundStyle(theme.accent)
+                        }.padding(20).background(theme.accent.opacity(0.07), in: .rect(cornerRadius: 22))
+                }.buttonStyle(.plain)
             }.padding(20).frame(maxWidth: 1200).frame(maxWidth: .infinity)
         }
         .navigationTitle("Discover").navigationBarTitleDisplayMode(.inline)
@@ -284,18 +312,25 @@ struct DiscoverView: View {
                 NavigationLink { ProfileView() } label: { ProfileAvatar(user: store.user, size: 28) }.accessibilityLabel("Profile")
             }
         }
-        .task { await load() }
+        .task(id: sectionScope) { await load() }
+        .refreshable { refreshID = UUID() }
     }
     @ViewBuilder private var shortcuts: some View {
         NavigationLink { GenreMixView() } label: { Label("Pick a mood", systemImage: "slider.horizontal.3").font(.subheadline.bold()).padding(.vertical, 4) }.buttonStyle(.glass)
-        NavigationLink { CatalogView(title: "For You", section: "for-you") } label: { Label("For you", systemImage: "heart").font(.subheadline.bold()).padding(.vertical, 4) }.buttonStyle(.glass)
+        NavigationLink { ForYouView() } label: { Label("For you", systemImage: "sparkles").font(.subheadline.bold()).padding(.vertical, 4) }.buttonStyle(.glass)
+        NavigationLink { GenresView() } label: { Label("Genres", systemImage: "square.grid.2x2").font(.subheadline.bold()).padding(.vertical, 4) }.buttonStyle(.glass)
         NavigationLink { CatalogView(title: "Manga", section: "manga") } label: { Label("Manga", systemImage: "book").font(.subheadline.bold()).padding(.vertical, 4) }.buttonStyle(.glass)
     }
     private func load() async {
+        let scope = sectionScope
         loading = true; error = nil
-        defer { loading = false }
-        do { let page: MediaPage = try await APIClient.shared.request("api/discover/spotlight"); items = page.items }
-        catch { self.error = error.localizedDescription }
+        defer { if scope == sectionScope { loading = false } }
+        do {
+            let page: MediaPage = try await APIClient.shared.request("api/discover/spotlight")
+            try Task.checkCancellation()
+            guard scope == sectionScope else { return }
+            items = page.items
+        } catch { if !Task.isCancelled, scope == sectionScope { self.error = error.localizedDescription } }
     }
 }
 
@@ -502,6 +537,7 @@ struct DiscoveryRail: View {
     @State private var items: [Media] = []
     @State private var error: String?
     @State private var loading = true
+    @ScaledMetric(relativeTo: .subheadline) private var placeholderHeight = 450.0
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
@@ -512,7 +548,7 @@ struct DiscoveryRail: View {
                 }.buttonStyle(.glass).accessibilityLabel("See all \(title)")
             }
             if let error { Text(error).font(.caption).foregroundStyle(.secondary); Button("Retry") { Task { await load() } }.buttonStyle(.glass) }
-            else if loading && items.isEmpty { AsunaLoadingView(accent: theme.accent).frame(maxWidth: .infinity).padding() }
+            else if loading && items.isEmpty { AsunaLoadingView(accent: theme.accent).frame(maxWidth: .infinity).frame(height: placeholderHeight) }
             else if items.isEmpty { Text("No titles here yet.").foregroundStyle(.secondary) }
             else { MediaRail(title: "", subtitle: subtitle, items: items) }
         }.task { await load() }
@@ -520,8 +556,11 @@ struct DiscoveryRail: View {
     private func load() async {
         loading = true; error = nil
         defer { loading = false }
-        do { let page: MediaPage = try await APIClient.shared.request("api/discover/section", query: ["section": section]); items = page.items }
-        catch { self.error = error.localizedDescription }
+        do {
+            let page: MediaPage = try await APIClient.shared.request("api/discover/section", query: ["section": section])
+            try Task.checkCancellation()
+            items = page.items
+        } catch { if !Task.isCancelled { self.error = error.localizedDescription } }
     }
 }
 

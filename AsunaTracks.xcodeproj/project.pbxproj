@@ -50,7 +50,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
@@ -167,7 +167,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
 				"INFOPLIST_KEY_CFBundleVersion" = "5";
@@ -198,7 +198,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMac";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
@@ -267,7 +267,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
 			};
 		};
@@ -393,7 +393,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
 			};
 		};
@@ -493,7 +493,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
 				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
@@ -537,7 +537,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
 			};
 		};
@@ -654,7 +654,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
@@ -753,6 +753,10 @@
 				"1426ECDADA0F96D547069F66",
 				"354D7FD6C5FD4FD9A89F95C1",
 				"53DC1DB3241A4645AB3FBDCF",
+				"5D646AE1BB2147B5A5C2059D",
+				"0AE82F253C3841169BA795F9",
+				"334BB5CEF66D40F18DFAA648",
+				"726C02E3A8CF412680066ED1",
 				"196036A60739A8BABA43FAF3",
 				"D9CE6933BD1670817B0BBBFD",
 				"4C63730A5165A8AB8A2E2A8B",
@@ -845,7 +849,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
@@ -976,7 +980,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
 				"INFOPLIST_KEY_CFBundleVersion" = "5";
@@ -1144,6 +1148,10 @@
 				"CEEB71152E589AE486F1BD38",
 				"39415991F0184B01BD98495B",
 				"2578EB22D1F1488CB294A299",
+				"ABD55709DB34418E99784DCF",
+				"6B315B236E3140A2A464984A",
+				"A2F899E62EF345E8A17C8908",
+				"8BC9EC88A7CB46DBBB58F55E",
 				"25D17DF6F14C1A95F9872D71",
 				"7CB1C7832B789F924B36436B",
 				"63F18A09AEC78C356D8FB651",
@@ -1337,7 +1345,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMac";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
@@ -1404,6 +1412,10 @@
 				"B6576A1CD2FA5386D491AB2B",
 				"3C1397FCBC9443F2AAD4D372",
 				"295B4331C1EF47898EE9509C",
+				"2B4B072DBDD54E30BFA14E9E",
+				"B72C842A8D67435C9720988F",
+				"4D7DA53298FD4C71997943B7",
+				"AD6F158FC87E4BA9A1220AB6",
 				"3DA69AAADD252CFA6E9A54F7",
 				"01A9EF8A5C52612723031054",
 				"B7DA2C068ED448672C829AF3",
@@ -1521,7 +1533,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "6";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
 			};
 		};
@@ -1665,6 +1677,28 @@
 			"isa" = "PBXBuildFile";
 			"fileRef" = "354D7FD6C5FD4FD9A89F95C1";
 		};
+		"726C02E3A8CF412680066ED1" = {
+            "isa" = "PBXFileReference";
+            "path" = "AsunaTracks/iOS/RecommendationFeed.swift";
+            "lastKnownFileType" = "sourcecode.swift";
+            "sourceTree" = "<group>";
+        };
+        "AD6F158FC87E4BA9A1220AB6" = { "isa" = "PBXBuildFile"; "fileRef" = "726C02E3A8CF412680066ED1"; };
+        "8BC9EC88A7CB46DBBB58F55E" = { "isa" = "PBXBuildFile"; "fileRef" = "726C02E3A8CF412680066ED1"; };
+		"334BB5CEF66D40F18DFAA648" = {
+            "isa" = "PBXFileReference";
+            "path" = "AsunaTracks/iOS/DiscoverForYouView.swift";
+            "lastKnownFileType" = "sourcecode.swift";
+            "sourceTree" = "<group>";
+        };
+        "4D7DA53298FD4C71997943B7" = { "isa" = "PBXBuildFile"; "fileRef" = "334BB5CEF66D40F18DFAA648"; };
+        "A2F899E62EF345E8A17C8908" = { "isa" = "PBXBuildFile"; "fileRef" = "334BB5CEF66D40F18DFAA648"; };
+        "0AE82F253C3841169BA795F9" = { "isa" = "PBXFileReference"; "path" = "AsunaTracks/iOS/ContinueWatchingSupport.swift"; "lastKnownFileType" = "sourcecode.swift"; "sourceTree" = "<group>"; };
+        "B72C842A8D67435C9720988F" = { "isa" = "PBXBuildFile"; "fileRef" = "0AE82F253C3841169BA795F9"; };
+        "6B315B236E3140A2A464984A" = { "isa" = "PBXBuildFile"; "fileRef" = "0AE82F253C3841169BA795F9"; };
+        "5D646AE1BB2147B5A5C2059D" = { "isa" = "PBXFileReference"; "path" = "AsunaTracks/iOS/ContinueWatchingView.swift"; "lastKnownFileType" = "sourcecode.swift"; "sourceTree" = "<group>"; };
+        "2B4B072DBDD54E30BFA14E9E" = { "isa" = "PBXBuildFile"; "fileRef" = "5D646AE1BB2147B5A5C2059D"; };
+        "ABD55709DB34418E99784DCF" = { "isa" = "PBXBuildFile"; "fileRef" = "5D646AE1BB2147B5A5C2059D"; };
 	};
 	"rootObject" = "244210E48437B6556980A702";
 }

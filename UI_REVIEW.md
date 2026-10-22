@@ -50,3 +50,29 @@ Post/comment headers share consistent avatar/name/role/username/date treatment. 
 Post creation is a text editor directly in the activity feed, and the main comment editor sits beneath the post in its conversation. Replies expand their own editor directly below the selected comment. Each row retains its unsent draft when collapsed. Closing removes keyboard focus; opening focuses the selected editor. Reply requests keep that comment as their parent ID. Reduce Motion skips the expansion animation.
 
 Editors use a rounded writing surface, native placeholder, collapsible attachment section, explicit attachment preview, and a prominent Post/Send action. Successful submission clears the editor and refreshes API content; failures preserve the draft. Mac installation and expansion/focus were inspected, and the iOS Simulator build passed. No post, comment, reply, or like was published during verification.
+
+## Discover and real For You recommendations
+
+Discover retains the fan carousel and trackpad controls. It now includes the website's upcoming, most-tracked, highest-rated, recent-update and character sections, plus native genre navigation. Rails load independently as they enter the lazy stack; a failed spotlight request does not hide other sections.
+
+For You decodes `personalized`, recommendation labels/reasons, and genre mixes from the existing authenticated `/api/discover/section?section=for-you` route. It preserves server ranking and first-season choices. General results are explicitly labeled Discover picks; signed-out users see a sign-in prompt. No client-side ranking or invented match percentage is used. Recommendations reload on account/list/preference changes, app activation, and explicit refresh. Prior-account results are hidden immediately, and late responses are rejected.
+
+Verified the live signed-in Mac results against the website, recommendation labels and genre-mix filtering. Mac install/launch and iPhone/iPad plus companion Watch simulator builds passed. Local intercepted-request tests cover the response contract, general versus personalized flags, account/list races, logout, and errors. The final app was also installed and launched in the existing iPhone 17e and iPad Pro 11-inch simulators; simulator visuals were not inspected because native Simulator UI access was unavailable. No live account writes were performed. Physical iPhone/iPad/Watch installations and a new GitHub release were not performed in this pass.
+
+
+## Beta 3 continuation parity and compact cards
+
+Continue Watching/Reading now uses the same responsive card implementation on Mac, iPhone and iPad. The compact layout puts a 70×104 cover beside a two-line title, progress and +1 button, with 12-point padding. It removes repeated status, watched count and separate next-episode rows. Dynamic Type accessibility sizes can expand the title and card; no fixed card height clips larger text. Unknown totals omit the progress bar rather than imply a total. Watch uses its own compact cover rows with direct progress actions.
+
+Intercepted API tests passed for continuation sorting/filtering, stale-tap rejection, account changes, episode/chapter writes, preservation of tracking fields and uncertain refresh failures. Independent Watch store tests also passed. No live account progress writes were used for visual review.
+
+Final compact layout: Mac Release and universal iPhone/iPad simulator builds pass. Installed build 7 on Mac and both phone/tablet simulators. Visually inspected the compact watching and reading layouts on Mac and the compact watching rail on iPad. The iPhone mirror streamed the updated app but became unreliable during scrolling, so full phone visual sign-off remains incomplete. Release archive validation confirms every bundled app/extension is build 7 and the IPA targets both device families. Physical device installation and Watch visual verification were not performed in this pass.
+
+
+## Episodes and inline sound playback
+
+Episode pages use an adaptive grid with number/title search, All/Unwatched filtering, tracking progress, watched checks and an Up next action. Missing artwork uses an episode-number tile. The action reuses ContinueProgressClient, including fresh-account/list checks and uncertain-write blocking. Episode loading is scoped to media identity as well as section.
+
+The sound WebM shorthand emits autoplay, playsinline, loop and preload=auto without controls or a separate sound button. WKWebView explicitly permits playback without user action and enables inline media on iPhone/iPad. Normal videos retain controls with fullscreen controls suppressed. Playback failures expose the media link. The supplied Catbox URL returned HTTP 206 and real video/webm bytes. Updated parser/widget snapshot tests pass; audible autoplay and physical iPhone fullscreen behavior still require device verification.
+
+Mac verification loaded Hyouka's 22 episodes and showed the account's 6/22 watched state, episode search and All/Unwatched controls. No progress action was sent. The iOS simulator build passes. The preview became unreliable during later scrolling; audible autoplay and physical-device fullscreen behavior are not claimed as verified.

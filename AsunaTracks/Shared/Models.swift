@@ -42,6 +42,10 @@ struct Media: Codable, Identifiable, Hashable {
     var startDate: String? = nil
     var endDate: String? = nil
     var season: String? = nil
+    var recommendationLabel: String? = nil
+    var recommendationReason: [String]? = nil
+    var similarUserCount: Int? = nil
+    var watchOrderAdjusted: Bool? = nil
     var displayTitle: String { titleEnglish.flatMap { $0.isEmpty ? nil : $0 } ?? title }
     var total: Int { (mediaType == "manga" ? chapters : episodes) ?? 0 }
     var unit: String { mediaType == "manga" ? "chapters" : "episodes" }

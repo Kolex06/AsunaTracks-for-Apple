@@ -42,6 +42,9 @@ final class AppStore {
         loadingList = true
         defer { loadingList = false }
         let response: ListResponse = try await APIClient.shared.request("api/list")
+        await applyList(response, accountID: accountID)
+    }
+    func applyList(_ response: ListResponse, accountID: Int) async {
         guard user?.id == accountID else { return }
         entries = response.items
         ProgressPublisher.publish(entries: entries, user: user)

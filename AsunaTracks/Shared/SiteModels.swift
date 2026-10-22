@@ -1,5 +1,27 @@
 import Foundation
 
+struct DiscoverRecommendationResponse: Decodable {
+    let items: [Media]
+    let personalized: Bool?
+    let moods: [DiscoverMood]?
+    var isPersonalized: Bool { personalized == true }
+    var uniqueItems: [Media] {
+        var seen = Set<String>()
+        return items.filter { seen.insert($0.identity).inserted }
+    }
+    var genreMixes: [DiscoverMood] {
+        var seen = Set<String>()
+        return (moods ?? []).filter { !$0.items.isEmpty && seen.insert($0.label).inserted }
+    }
+}
+
+struct DiscoverMood: Decodable, Identifiable {
+    let label: String
+    let reason: String?
+    let items: [Media]
+    var id: String { label }
+}
+
 struct CollectionPage: Decodable { let items: [TrackCollection] }
 struct CollectionResponse: Decodable { let collection: TrackCollection }
 struct CollectionStats: Decodable {

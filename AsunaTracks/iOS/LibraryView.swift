@@ -8,10 +8,14 @@ struct LibraryView: View {
     @State private var sort = "recent"
     @State private var query = ""
     @State private var favoritesOnly = false
+    init(initialCategory: String = "all", initialStatus: String = "all") {
+        _category = State(initialValue: initialCategory)
+        _filter = State(initialValue: initialStatus)
+    }
     private var filtered: [ListEntry] {
         let result = store.entries.filter { entry in
-            (filter == "all" || (LibraryStatus(rawValue: filter)?.matches(entry) ?? false)) &&
-            (category == "all" || (category == "novels" ? (entry.media.type ?? "").localizedCaseInsensitiveContains("novel") : category == "manga" ? entry.media.mediaType == "manga" && !(entry.media.type ?? "").localizedCaseInsensitiveContains("novel") : entry.media.mediaType == category)) &&
+            (filter == "all" || (filter == "active" ? entry.active : (LibraryStatus(rawValue: filter)?.matches(entry) ?? false))) &&
+            (category == "all" || (category == "books" ? entry.media.mediaType == "manga" : category == "novels" ? (entry.media.type ?? "").localizedCaseInsensitiveContains("novel") : category == "manga" ? entry.media.mediaType == "manga" && !(entry.media.type ?? "").localizedCaseInsensitiveContains("novel") : entry.media.mediaType == category)) &&
             (!favoritesOnly || entry.favorite == true) &&
             (query.isEmpty || entry.media.displayTitle.localizedCaseInsensitiveContains(query))
         }
@@ -44,7 +48,7 @@ struct LibraryView: View {
                         }
                         HStack {
                             Picker("Category", selection: $category) {
-                                Text("All titles").tag("all"); Text("Anime").tag("anime"); Text("Manga").tag("manga"); Text("Novels").tag("novels")
+                                Text("All titles").tag("all"); Text("Anime").tag("anime"); Text("Manga & novels").tag("books"); Text("Manga").tag("manga"); Text("Novels").tag("novels")
                             }
                             Spacer()
                             Picker("Sort", selection: $sort) {
@@ -53,6 +57,7 @@ struct LibraryView: View {
                         }.pickerStyle(.menu)
                         ScrollView(.horizontal) {
                             HStack(spacing: 10) {
+                                Button("Active · \(store.entries.filter(\.active).count)") { filter = "active" }.buttonStyle(.glass).tint(filter == "active" ? theme.accent : .secondary)
                                 Button("All · \(store.entries.count)") { filter = "all" }.buttonStyle(.glass).tint(filter == "all" ? theme.accent : .secondary)
                                 ForEach(LibraryStatus.allCases) { status in
                                     Button("\(status.label) · \(store.entries.filter { status.matches($0) }.count)") { filter = status.rawValue }

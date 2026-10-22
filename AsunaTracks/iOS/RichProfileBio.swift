@@ -22,7 +22,11 @@ struct RichProfileBio: View {
     func makeView(context: Context) -> WKWebView {
         let config = WKWebViewConfiguration()
         config.websiteDataStore = .nonPersistent()
-        config.mediaTypesRequiringUserActionForPlayback = .all
+        config.mediaTypesRequiringUserActionForPlayback = []
+        #if !os(macOS)
+        config.allowsInlineMediaPlayback = true
+        config.allowsPictureInPictureMediaPlayback = false
+        #endif
         config.userContentController.add(context.coordinator, name: "bioHeight")
         #if os(macOS)
         let view = BioContentWebView(frame: .zero, configuration: config)
@@ -49,9 +53,9 @@ struct RichProfileBio: View {
         let html = """
         <!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src https: http:; media-src https: http:; style-src 'unsafe-inline'; script-src 'nonce-\(nonce)';">
-        <style>:root{color-scheme:\(dark ? "dark" : "light")}*{box-sizing:border-box}html,body{margin:0;background:transparent;color:\(dark ? "#e9eaf2" : "#202332");font:16px -apple-system;overflow:hidden} .copy{white-space:pre-wrap;line-height:1.6;margin:0 0 12px;overflow-wrap:anywhere}figure{margin:10px auto;max-width:100%;}img,video{display:block;max-width:100%;width:auto;height:auto;margin:auto;border-radius:10px}video{width:100%;max-height:520px;aspect-ratio:auto 16/9}.play-sound[hidden]{display:none}.play-sound{display:block;margin:12px auto;padding:10px 18px;border:1px solid #38bdf855;border-radius:24px;background:#38bdf822;color:inherit;font:600 14px -apple-system;cursor:pointer}a{color:#38bdf8}.fallback{display:none}figure.failed .fallback{display:block}figcaption{font-size:12px;margin-top:8px;text-align:center}\(mediaSizing)</style></head><body>
+        <style>:root{color-scheme:\(dark ? "dark" : "light")}*{box-sizing:border-box}html,body{margin:0;background:transparent;color:\(dark ? "#e9eaf2" : "#202332");font:16px -apple-system;overflow:hidden} .copy{white-space:pre-wrap;line-height:1.6;margin:0 0 12px;overflow-wrap:anywhere}figure{margin:10px auto;max-width:100%;}img,video{display:block;max-width:100%;width:auto;height:auto;margin:auto;border-radius:10px}video{width:100%;max-height:520px;aspect-ratio:auto 16/9}video::-webkit-media-controls-fullscreen-button{display:none}a{color:#38bdf8}.fallback{display:none}figure.failed .fallback{display:block}figcaption{font-size:12px;margin-top:8px;text-align:center}\(mediaSizing)</style></head><body>
         \(ProfileBio.fragment(text))
-        <script nonce="\(nonce)">const report=()=>window.webkit.messageHandlers.bioHeight.postMessage(document.body.scrollHeight);new ResizeObserver(report).observe(document.body);document.querySelectorAll('img').forEach(i=>{i.onload=report;i.onerror=()=>{i.parentElement.classList.add('failed');i.alt='Image unavailable';report();};});document.querySelectorAll('video').forEach(v=>{v.onloadedmetadata=report;v.onerror=report;const b=v.parentElement.querySelector('.play-sound');if(b){b.onclick=()=>{v.muted=false;v.volume=1;v.play().catch(()=>{b.hidden=false;});};v.onplaying=()=>{b.hidden=true;report();};v.onpause=()=>{b.hidden=false;report();};}});report();</script>
+        <script nonce="\(nonce)">const report=()=>window.webkit.messageHandlers.bioHeight.postMessage(document.body.scrollHeight);new ResizeObserver(report).observe(document.body);document.querySelectorAll('img').forEach(i=>{i.onload=report;i.onerror=()=>{i.parentElement.classList.add('failed');i.alt='Image unavailable';report();};});document.querySelectorAll('video').forEach(v=>{v.onloadedmetadata=report;v.onerror=()=>{v.parentElement.classList.add('failed');report();};if(v.hasAttribute('data-sound-webm')){v.muted=false;v.volume=1;const start=()=>{if(!document.hidden){v.play().catch(()=>{v.parentElement.classList.add('failed');report();});}};const visibility=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){start();}else{v.pause();}});},{threshold:0.01});visibility.observe(v);document.addEventListener('visibilitychange',()=>{if(document.hidden){v.pause();}else if(v.getBoundingClientRect().bottom>0 && v.getBoundingClientRect().top<innerHeight){start();}});v.addEventListener('playing',()=>{v.parentElement.classList.remove('failed');report();});}});report();</script>
         </body></html>
         """
         view.loadHTMLString(html, baseURL: URL(string: "https://asunatracks.space"))

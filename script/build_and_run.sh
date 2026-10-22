@@ -10,7 +10,7 @@ LSREGISTER="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchS
 case "$MODE" in run|--verify|--debug|--logs|--telemetry) ;; *) echo "Usage: $0 [--verify|--debug|--logs|--telemetry]" >&2; exit 2;; esac
 BUILD_ROOT="${ASUNATRACKS_BUILD_ROOT:-/tmp/asunatracks-mac}"
 BUILD_CONFIGURATION="${ASUNATRACKS_CONFIGURATION:-Debug}"
-xcodebuild -project AsunaTracks.xcodeproj -scheme AsunaTracksMac -configuration "$BUILD_CONFIGURATION" -destination 'platform=macOS' -derivedDataPath "$BUILD_ROOT" build
+xcodebuild -project AsunaTracks.xcodeproj -scheme AsunaTracksMac -configuration "$BUILD_CONFIGURATION" -destination 'platform=macOS' -derivedDataPath "$BUILD_ROOT" -jobs "${ASUNATRACKS_BUILD_JOBS:-2}" build
 BUILD_DIR="$BUILD_ROOT/Build/Products/$BUILD_CONFIGURATION"
 pkill -x "$APP_NAME" >/dev/null 2>&1 || true
 # Preserve the app and extension signatures and their shared-container entitlements.

@@ -25,6 +25,25 @@ struct MediaExtrasView: View {
     @State private var fetching: UUID?
     @State private var selectedPicture: MediaPicture?
     @State private var showReviewComposer = false
+    @State private var episodeQuery = ""
+    @State private var unwatchedOnly = false
+    @State private var progressError: String?
+    @State private var progressBlocked = false
+    private var listEntry: ListEntry? { store.entry(for: media) }
+    private var filteredEpisodes: [MediaEpisode] {
+        episodes.filter { episode in
+            (!unwatchedOnly || !isWatched(episode)) && (episodeQuery.isEmpty || "\(episode.number) \(episode.title ?? "")".localizedCaseInsensitiveContains(episodeQuery))
+        }
+    }
+    private func isWatched(_ episode: MediaEpisode) -> Bool {
+        if episode.watchedAt != nil { return true }
+        guard let number = episode.episodeNumber, number > 0, let entry = listEntry else { return false }
+        return number <= Double(max(0, entry.progress ?? 0))
+    }
+    private func isNext(_ episode: MediaEpisode) -> Bool {
+        guard let entry = listEntry, entry.canAdvance else { return false }
+        return episode.episodeNumber == Double(max(0, entry.progress ?? 0) + 1)
+    }
     private var base: String { "public/api/\(media.mediaType)/\(media.id)" }
     var body: some View {
         LazyVStack(alignment: .leading, spacing: 18) {
@@ -37,7 +56,14 @@ struct MediaExtrasView: View {
             if let error { FailureView(message: error) { Task { await load(reset: page == 0) } } }
             switch section {
             case .episodes:
-                ForEach(episodes) { episode in episodeRow(episode) }
+                episodeControls
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 300, maximum: 650), spacing: 12, alignment: .top)], alignment: .leading, spacing: 12) {
+                    ForEach(filteredEpisodes) { episode in episodeRow(episode) }
+                }
+                if !episodes.isEmpty && filteredEpisodes.isEmpty {
+                    Text(unwatchedOnly ? "No unwatched episodes match. Clear the search or show all episodes." : "No episodes match your search.")
+                        .font(.subheadline).foregroundStyle(.secondary)
+                }
                 if more && error == nil {
                     AsunaLoadingView(title: "Loading more episodes…", accent: theme.accent).frame(maxWidth: .infinity)
                         .onAppear { Task { await load(reset: false) } }
@@ -70,7 +96,7 @@ struct MediaExtrasView: View {
                     description: Text(section == .reviews ? "Share what you thought of this story." : "AsunaTracks does not have \(section.rawValue.lowercased()) for this title yet."))
             }
         }
-        .task(id: section) { generation = UUID(); page = 0; more = false; await load(reset: true) }
+        .task(id: "\(media.identity):\(section.rawValue)") { generation = UUID(); page = 0; more = false; episodes = []; episodeQuery = ""; unwatchedOnly = false; progressBlocked = false; progressError = nil; await load(reset: true) }
         .sheet(item: $selectedPicture) { picture in
             NavigationStack { MediaPictureViewer(picture: picture) }.frame(minWidth: 300, minHeight: 420)
         }
@@ -81,23 +107,106 @@ struct MediaExtrasView: View {
     private var empty: Bool {
         switch section { case .episodes: episodes.isEmpty; case .characters: characters.isEmpty; case .artwork: pictures.isEmpty; case .related: relations.isEmpty; case .reviews: reviews.isEmpty; case .overview: false }
     }
-    private func episodeRow(_ episode: MediaEpisode) -> some View {
-        HStack(spacing: 14) {
-            AsunaArtwork(path: episode.imageUrl ?? episode.coverImageUrl, accent: theme.accent).frame(width: 100, height: 60).clipShape(.rect(cornerRadius: 10))
-            VStack(alignment: .leading, spacing: 6) {
-                Text("Episode \(episode.number)").font(.caption.bold()).foregroundStyle(theme.accent)
-                Text(episode.title ?? "Episode \(episode.number)").font(.headline).lineLimit(2)
-                HStack(spacing: 8) {
-                    if let aired = episode.aired { Text(aired.prefix(10)) }
-                    if episode.filler == true { Text("Filler").foregroundStyle(.orange) }
-                    if episode.recap == true { Text("Recap").foregroundStyle(.yellow) }
-                }.font(.caption2).foregroundStyle(.secondary)
-            }.frame(maxWidth: .infinity, alignment: .leading)
-            if let number = episode.episodeNumber, let entry = store.entry(for: media), number <= Double(entry.progress ?? 0) {
-                Image(systemName: "checkmark.circle.fill").foregroundStyle(StatusStyle.color("completed")).accessibilityLabel("Watched")
+    private var episodeControls: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            if let entry = listEntry {
+                HStack {
+                    Label("\(max(0, entry.progress ?? 0))\(media.total > 0 ? " / \(media.total)" : "") watched", systemImage: "checkmark.circle.fill")
+                        .font(.subheadline.bold()).foregroundStyle(theme.accent)
+                    Spacer()
+                    Text("\(episodes.count) loaded").font(.caption).foregroundStyle(.secondary)
+                }
+                if media.total > 0 { ProgressView(value: min(1, max(0, Double(entry.progress ?? 0) / Double(media.total)))).tint(theme.accent) }
             }
-        }.padding(14).background(theme.accent.opacity(0.05), in: .rect(cornerRadius: 16))
-            .accessibilityElement(children: .combine)
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 12) { episodeSearch; episodeFilter }
+                VStack(alignment: .leading, spacing: 10) { episodeSearch; episodeFilter }
+            }
+            if let progressError {
+                Text(progressError).font(.caption).foregroundStyle(.secondary)
+                Button("Refresh progress") {
+                    Task {
+                        do { try await store.refreshList(); self.progressError = nil; progressBlocked = false }
+                        catch { self.progressError = error.localizedDescription }
+                    }
+                }.buttonStyle(.glass).disabled(store.loadingList)
+            }
+        }
+    }
+    private var episodeSearch: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
+            TextField("Find episode or title", text: $episodeQuery).textFieldStyle(.plain)
+                .accessibilityLabel("Search episodes by number or title")
+            if !episodeQuery.isEmpty {
+                Button { episodeQuery = "" } label: { Image(systemName: "xmark.circle.fill") }
+                    .buttonStyle(.plain).foregroundStyle(.secondary).accessibilityLabel("Clear episode search")
+            }
+        }.padding(12).background(theme.accent.opacity(0.06), in: .rect(cornerRadius: 12))
+    }
+    private var episodeFilter: some View {
+        Picker("Episodes", selection: $unwatchedOnly) {
+            Text("All").tag(false)
+            Text("Unwatched").tag(true)
+        }.pickerStyle(.segmented).labelsHidden().frame(width: 190)
+    }
+    private func episodeRow(_ episode: MediaEpisode) -> some View {
+        let watched = isWatched(episode)
+        let next = isNext(episode)
+        return VStack(alignment: .leading, spacing: 10) {
+            HStack(alignment: .top, spacing: 12) {
+                Group {
+                    if let image = episode.imageUrl ?? episode.coverImageUrl, !image.isEmpty {
+                        AsunaArtwork(path: image, accent: theme.accent)
+                    } else {
+                        ZStack {
+                            theme.accent.opacity(0.10)
+                            Text(episode.number).font(.title3.bold()).monospacedDigit().foregroundStyle(theme.accent)
+                        }.accessibilityHidden(true)
+                    }
+                }.frame(width: 80, height: 54).clipShape(.rect(cornerRadius: 10))
+                VStack(alignment: .leading, spacing: 5) {
+                    HStack {
+                        Text("Episode \(episode.number)").foregroundStyle(theme.accent)
+                        if next { Text("Up next").foregroundStyle(theme.accent) }
+                        Spacer(minLength: 0)
+                        if watched { Image(systemName: "checkmark.circle.fill").foregroundStyle(StatusStyle.color("completed")).accessibilityLabel("Watched") }
+                    }.font(.caption.bold())
+                    if let title = episode.title, !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                        Text(title).font(.subheadline.weight(.semibold)).lineLimit(3).fixedSize(horizontal: false, vertical: true)
+                    }
+                    HStack(spacing: 8) {
+                        if let aired = episode.aired { Text(aired.prefix(10)) }
+                        if episode.filler == true { Text("Filler").foregroundStyle(.orange) }
+                        if episode.recap == true { Text("Recap").foregroundStyle(.secondary) }
+                    }.font(.caption2).foregroundStyle(.secondary)
+                }.frame(maxWidth: .infinity, alignment: .leading)
+            }
+            if next, let entry = listEntry {
+                Button { Task { await logNextEpisode(entry) } } label: {
+                    Group {
+                        if store.busyIDs.contains(entry.id) { AsunaLoadingView(title: "Saving…", accent: theme.accent, compact: true) }
+                        else { Label("Mark episode \(episode.number) watched", systemImage: "checkmark") }
+                    }.font(.caption.bold()).frame(maxWidth: .infinity, minHeight: 30)
+                }.buttonStyle(.glass).disabled(store.busyIDs.contains(entry.id) || progressBlocked)
+            }
+        }.padding(12).frame(maxWidth: .infinity, alignment: .leading)
+            .background(theme.accent.opacity(next ? 0.09 : 0.04), in: .rect(cornerRadius: 16))
+            .overlay { RoundedRectangle(cornerRadius: 16).strokeBorder(theme.accent.opacity(next ? 0.4 : 0.10)) }
+    }
+    private func logNextEpisode(_ entry: ListEntry) async {
+        guard let accountID = store.user?.id, !store.busyIDs.contains(entry.id), !progressBlocked else { return }
+        store.busyIDs.insert(entry.id)
+        defer { store.busyIDs.remove(entry.id) }
+        do {
+            let result = try await ContinueProgressClient().advance(entry, accountID: accountID, accountStillCurrent: { store.user?.id == accountID })
+            guard store.user?.id == accountID else { return }
+            await store.applyList(result.list, accountID: accountID)
+            progressError = nil
+        } catch {
+            guard store.user?.id == accountID else { return }
+            progressError = error.localizedDescription; progressBlocked = true
+        }
     }
     @ViewBuilder private func relatedCard(_ title: RelatedTitle) -> some View {
         if let opened = localRoute(title) {

@@ -32,9 +32,9 @@ enum ProfileBio {
                     let webm = raw.lowercased().hasPrefix("webm")
                     if webm && url.pathExtension.lowercased() != "webm" { result += paragraph(raw) }
                     else {
-                        let flags = sound ? " data-sound-webm" : webm ? " muted" : ""
-                        let button = sound ? "<button type=\"button\" class=\"play-sound\">Play with sound</button>" : ""
-                        result += "<figure><video controls playsinline loop\(flags) preload=\"\(sound ? "none" : "metadata")\" src=\"\(escape(url.absoluteString))\"></video>\(button)<figcaption><a href=\"\(escape(url.absoluteString))\">Open video</a></figcaption></figure>"
+                        let flags = sound ? " autoplay data-sound-webm" : webm ? " muted" : ""
+                        let controls = sound ? "" : " controls"
+                        result += "<figure><video\(controls) playsinline webkit-playsinline disablepictureinpicture controlslist=\"nofullscreen nodownload noremoteplayback\" loop\(flags) preload=\"\(sound ? "auto" : "metadata")\" src=\"\(escape(url.absoluteString))\"></video><figcaption class=\"fallback\"><a href=\"\(escape(url.absoluteString))\">Open video</a></figcaption></figure>"
                     }
                 } else {
                     let width = Int(raw[..<open].dropFirst(3))
