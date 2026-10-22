@@ -86,6 +86,7 @@ struct User: Codable, Identifiable {
     var bannerUrl: String? = nil
     var bio: String? = nil
     var role: String? = nil
+    var isSponsor: Bool? = nil
     var showNsfw: Bool? = nil
     var profilePrivate: Bool? = nil
     var watchingNowPrivate: Bool? = nil

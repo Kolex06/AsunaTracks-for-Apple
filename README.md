@@ -6,9 +6,9 @@ Native apps for **iPhone, iPad, Apple Watch, and Mac**, connected to your existi
 
 | Device | Download | Installation |
 | --- | --- | --- |
-| Mac | [Mac app ZIP](https://github.com/Kolex06/AsunaTracks-for-Apple/releases/download/v1.0.0-beta.1/AsunaTracks-macOS.zip) | Unzip and move into Applications. Development-signed; not notarized. |
-| iPhone and iPad | [Universal unsigned IPA](https://github.com/Kolex06/AsunaTracks-for-Apple/releases/download/v1.0.0-beta.1/AsunaTracks-iPhone-iPad-unsigned.ipa) | Requires your own Apple signing. Includes the companion Watch app. |
-| Apple Watch | [Unsigned Watch app ZIP](https://github.com/Kolex06/AsunaTracks-for-Apple/releases/download/v1.0.0-beta.1/AsunaTracks-Apple-Watch-unsigned.zip) | Requires developer signing and installation, normally through Xcode. |
+| Mac | [Mac app ZIP](https://github.com/Kolex06/AsunaTracks-for-Apple/releases/download/v1.0.0-beta.2/AsunaTracks-macOS.zip) | Unzip and move into Applications. Development-signed; not notarized. |
+| iPhone and iPad | [Universal unsigned IPA](https://github.com/Kolex06/AsunaTracks-for-Apple/releases/download/v1.0.0-beta.2/AsunaTracks-iPhone-iPad-unsigned.ipa) | Requires your own Apple signing. Includes the companion Watch app. |
+| Apple Watch | [Unsigned Watch app ZIP](https://github.com/Kolex06/AsunaTracks-for-Apple/releases/download/v1.0.0-beta.2/AsunaTracks-Apple-Watch-unsigned.zip) | Requires developer signing and installation, normally through Xcode. |
 | Source | [Source ZIP](https://github.com/Kolex06/AsunaTracks-for-Apple/archive/refs/heads/main.zip) | Open the Xcode project to build for any supported device. |
 
 **[Installation guide](INSTALL.md) · [All releases](https://github.com/Kolex06/AsunaTracks-for-Apple/releases)**
@@ -23,7 +23,7 @@ Requires **macOS 26+, iOS/iPadOS 26+, or watchOS 26+**. iPhone/iPad and Watch do
 - Native title details with episodes, characters, related titles, artwork, reviews, favorites, and tracking controls.
 - My List with category/status filters, actual update-time sorting, notes, scores, and episode/chapter logging.
 - Account colors, custom accent, and intensity from the settings API. Local light/dark/system appearance.
-- Native profiles, rich image/GIF/video bios, community, collections, and release schedules. Other sections open in a focused website view on Mac, iPhone, and iPad.
+- Native profiles, animated GIF avatars/banners, rich image/GIF/video bios, Community posts/comments/replies and API likes, collections, release schedules, seasons, genres, and announcements. Other sections open in a focused website view on Mac, iPhone, and iPad.
 - Branded loaders, Liquid Glass controls, larger-text layouts, VoiceOver labels, and Reduce Motion support.
 - An independent Watch app with covers, its own sign-in, and direct API updates while the iPhone app is closed. Internet access is required.
 
@@ -53,7 +53,7 @@ Choose your own team for every app/extension target. Update bundle identifiers, 
 
 On the configured development Mac, `./script/build_and_run.sh --verify` builds, installs, and opens one copy at `~/Applications/AsunaTracks.app`, unregistering temporary build copies. Debug/log flags are available. `Package.swift` offers a source-only Mac build without widgets.
 
-`./script/package_release.sh 1.0.0-beta.1` prepares every platform's downloads, the installation guide, and SHA-256 checksums under `dist/1.0.0-beta.1`. Portable device packages exclude private provisioning profiles. The Mac package uses development signing and is not notarized.
+`./script/package_release.sh 1.0.0-beta.2` prepares every platform's downloads, the installation guide, and SHA-256 checksums under `dist/1.0.0-beta.2`. Portable device packages exclude private provisioning profiles. The Mac package uses development signing and is not notarized.
 
 ## Verification and limits
 

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 7265,
+      "year": 2026,
+      "season": "fall",
+      "anime_count": 65
+    },
+    {
+      "id": 7215,
+      "year": 2026,
+      "season": "summer",
+      "anime_count": 57
+    },
+    {
+      "id": 4,
+      "year": 2026,
+      "season": "spring",
+      "anime_count": 45
+    },
+    {
+      "id": 3,
+      "year": 2026,
+      "season": "winter",
+      "anime_count": 25
+    }
+  ]
+}

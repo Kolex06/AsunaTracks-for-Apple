@@ -113,7 +113,7 @@ struct UserProfileView: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(user.displayName ?? user.username).font(.largeTitle.bold()).fixedSize(horizontal: false, vertical: true)
                     Text("@\(user.username)").foregroundStyle(.secondary)
-                    if let role = user.role, role != "user" { Text(role.capitalized).font(.caption.bold()).foregroundStyle(user.accountTheme.accent) }
+                    UserRoleBadges(user: user)
                 }
                 Spacer(minLength: 0)
             }

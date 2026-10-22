@@ -90,11 +90,28 @@ struct CommunityPost: Decodable, Identifiable {
     let body: String?
     let user: User?
     let createdAt: String?
-    let likeCount: Int?
-    let commentCount: Int?
+    var likeCount: Int?
+    var commentCount: Int?
     let attachment: PostAttachment?
+    var userLiked: Bool? = nil
+    var comments: [CommunityComment]? = nil
 }
 struct PostAttachment: Decodable { let url: String?; let previewUrl: String?; let title: String? }
+struct CommunityPostResponse: Decodable { let item: CommunityPost }
+struct SocialLikeResponse: Decodable { let userLiked: Bool; let likeCount: Int }
+struct CommunityComment: Decodable, Identifiable {
+    let id: Int
+    let body: String?
+    let user: User?
+    let createdAt: String?
+    let parentId: Int?
+    let replyTo: CommunityReplyReference?
+    let attachment: PostAttachment?
+    let likeCount: Int?
+    let userLiked: Bool?
+}
+struct CommunityReplyReference: Decodable { let id: Int?; let body: String?; let user: User? }
+
 
 struct EpisodePage: Decodable { let items: [MediaEpisode]; let hasNext: Bool?; let total: Int? }
 struct MediaEpisode: Decodable, Identifiable {
@@ -143,3 +160,31 @@ struct MediaReview: Decodable, Identifiable {
     let votes: ReviewVotes?
 }
 struct ReviewVotes: Decodable { let score: Int?; let up: Int?; let down: Int? }
+
+// Public catalog routes use `items`, while the internal genre route uses `genres`.
+struct PublicGenrePage: Decodable { let items: [Genre] }
+struct SeasonPage: Decodable { let items: [CatalogSeason] }
+struct CatalogSeason: Decodable, Identifiable, Hashable {
+    let id: Int
+    let year: Int
+    let season: String
+    let animeCount: Int?
+    var title: String { "\(season.capitalized) \(year)" }
+    var icon: String {
+        switch season {
+        case "winter": "snowflake"
+        case "spring": "leaf"
+        case "summer": "sun.max"
+        default: "leaf.fill"
+        }
+    }
+}
+struct AnnouncementPage: Decodable { let items: [SiteAnnouncement] }
+struct SiteAnnouncement: Decodable, Identifiable {
+    let id: Int
+    let title: String
+    let body: String
+    let category: String?
+    let pinned: Bool?
+    let createdAt: String?
+}

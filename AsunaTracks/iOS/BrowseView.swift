@@ -33,6 +33,12 @@ struct BrowseView: View {
     @State private var loading = true
     @State private var fetchingGeneration: UUID?
     @State private var error: String?
+    init(isSearch: Bool = false, isTop: Bool = false, initialKind: BrowseKind = .anime, initialGenre: Genre? = nil) {
+        self.isSearch = isSearch
+        self.isTop = isTop
+        _kind = State(initialValue: initialKind)
+        _selectedGenre = State(initialValue: initialGenre)
+    }
     private var requestID: String { "\(kind.rawValue):\(query):\(ranking):\(selectedGenre?.id ?? 0)" }
     var body: some View {
         ScrollView {

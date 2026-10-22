@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-VERSION="${1:-1.0.0-beta.1}"
+VERSION="${1:-1.0.0-beta.2}"
 [[ "$VERSION" =~ ^[a-zA-Z0-9._-]+$ ]] || { echo "Invalid version" >&2; exit 2; }
 OUTPUT="$PWD/dist/$VERSION"
 RELEASE_BUILD_ROOT="${ASUNATRACKS_RELEASE_BUILD_ROOT:-/tmp/asunatracks-release.noindex}"

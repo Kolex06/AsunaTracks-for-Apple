@@ -50,7 +50,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
@@ -167,7 +167,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
 				"INFOPLIST_KEY_CFBundleVersion" = "5";
@@ -198,7 +198,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMac";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
@@ -267,7 +267,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
 			};
 		};
@@ -393,7 +393,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
 			};
 		};
@@ -493,7 +493,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
 				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
@@ -537,7 +537,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
 			};
 		};
@@ -654,7 +654,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
@@ -751,6 +751,8 @@
 				"9640626CDE789CA82576632A",
 				"96FD33E9CD8F16C25DF4A331",
 				"1426ECDADA0F96D547069F66",
+				"354D7FD6C5FD4FD9A89F95C1",
+				"53DC1DB3241A4645AB3FBDCF",
 				"196036A60739A8BABA43FAF3",
 				"D9CE6933BD1670817B0BBBFD",
 				"4C63730A5165A8AB8A2E2A8B",
@@ -843,7 +845,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
@@ -974,7 +976,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
 				"INFOPLIST_KEY_CFBundleVersion" = "5";
@@ -1140,6 +1142,8 @@
 				"EC4BF0CE69583BC17E067925",
 				"A33C0186C44C835FE85CCA8C",
 				"CEEB71152E589AE486F1BD38",
+				"39415991F0184B01BD98495B",
+				"2578EB22D1F1488CB294A299",
 				"25D17DF6F14C1A95F9872D71",
 				"7CB1C7832B789F924B36436B",
 				"63F18A09AEC78C356D8FB651",
@@ -1333,7 +1337,7 @@
 				"EXECUTABLE_NAME" = "AsunaTracksMac";
 				"SUPPORTED_PLATFORMS" = "macosx";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
@@ -1398,6 +1402,8 @@
 				"A1B4D443073ECC1A9C27C078",
 				"B91AB7813774CB0B4BFBD7B1",
 				"B6576A1CD2FA5386D491AB2B",
+				"3C1397FCBC9443F2AAD4D372",
+				"295B4331C1EF47898EE9509C",
 				"3DA69AAADD252CFA6E9A54F7",
 				"01A9EF8A5C52612723031054",
 				"B7DA2C068ED448672C829AF3",
@@ -1515,7 +1521,7 @@
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_VERSION" = "5.0";
 				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "6";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
 			};
 		};
@@ -1630,6 +1636,34 @@
 		"C0C435E0A0084E239F9AC059" = {
 			"isa" = "PBXBuildFile";
 			"fileRef" = "2D2BAD034212BEDB6D39CE98";
+		};
+		"53DC1DB3241A4645AB3FBDCF" = {
+			"path" = "AsunaTracks/iOS/ExploreViews.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"295B4331C1EF47898EE9509C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "53DC1DB3241A4645AB3FBDCF";
+		};
+		"2578EB22D1F1488CB294A299" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "53DC1DB3241A4645AB3FBDCF";
+		};
+		"354D7FD6C5FD4FD9A89F95C1" = {
+			"path" = "AsunaTracks/iOS/CommunityAPI.swift";
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"sourceTree" = "<group>";
+		};
+		"3C1397FCBC9443F2AAD4D372" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "354D7FD6C5FD4FD9A89F95C1";
+		};
+		"39415991F0184B01BD98495B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "354D7FD6C5FD4FD9A89F95C1";
 		};
 	};
 	"rootObject" = "244210E48437B6556980A702";

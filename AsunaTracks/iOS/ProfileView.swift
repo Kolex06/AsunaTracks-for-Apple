@@ -7,11 +7,70 @@ struct ProfileAvatar: View {
     @Environment(\.accountTheme) private var theme
     var body: some View {
         Group {
-            if let path = user?.avatarUrl, !path.isEmpty { AsunaArtwork(path: path, accent: theme.accent) }
+            if let path = user?.avatarUrl, !path.isEmpty { AsunaArtwork(path: path, accent: theme.accent, animateLoading: false) }
             else { Image(systemName: "person.crop.circle.fill").resizable().scaledToFit().foregroundStyle(theme.accent) }
         }.frame(width: size, height: size).clipShape(Circle())
             .overlay(Circle().strokeBorder(theme.accent.opacity(0.4)))
             .accessibilityLabel("Profile picture")
+    }
+}
+
+/// Uses the site's semantic role colors, independent of a user's profile accent.
+struct UserRoleBadges: View {
+    let user: User
+    private var role: String { (user.role ?? "user").lowercased() }
+    var body: some View {
+        HStack(spacing: 6) {
+            if role == "admin" || role == "mod" {
+                let name = role == "admin" ? "Admin" : "Moderator"
+                ZStack {
+                    Image(systemName: "shield.fill")
+                        .font(.system(size: 20))
+                        .foregroundStyle(role == "admin" ? Color(red: 167/255, green: 139/255, blue: 250/255) : Color(red: 79/255, green: 209/255, blue: 179/255))
+                    Image(systemName: role == "admin" ? "star.fill" : "checkmark")
+                        .font(.system(size: 9, weight: .heavy)).foregroundStyle(.white)
+                }.frame(width: 22, height: 22)
+                    .accessibilityElement(children: .ignore).accessibilityLabel(name).help(name)
+            } else if role == "vip" {
+                Text("VIP").font(.caption2.bold())
+                    .foregroundStyle(Color(red: 1, green: 231/255, blue: 163/255))
+                    .padding(.horizontal, 7).padding(.vertical, 3)
+                    .background(Color.orange.opacity(0.18), in: Capsule())
+                    .overlay(Capsule().strokeBorder(Color.orange.opacity(0.5)))
+                    .accessibilityLabel("VIP")
+            } else if !role.isEmpty && role != "user" {
+                Text(role.capitalized).font(.caption2).foregroundStyle(.secondary)
+            }
+            if user.isSponsor == true {
+                SponsorGemBadge()
+                    .accessibilityLabel("Sponsor").help("Sponsor")
+            }
+        }
+    }
+}
+
+/// The same 24-point faceted gem and sparkle used by sponsorBadgeMarkup on the site.
+private struct SponsorGemBadge: View {
+    var body: some View {
+        Canvas { context, size in
+            let scale = CGAffineTransform(scaleX: size.width / 24, y: size.height / 24)
+            func polygon(_ points: [CGPoint], color: Color) {
+                var path = Path()
+                path.addLines(points)
+                path.closeSubpath()
+                context.fill(path.applying(scale), with: .color(color))
+            }
+            let gold = Color(red: 245/255, green: 184/255, blue: 91/255)
+            let highlight = Color(red: 1, green: 242/255, blue: 198/255)
+            let shadow = Color(red: 212/255, green: 138/255, blue: 49/255)
+            polygon([CGPoint(x: 5.5, y: 6), CGPoint(x: 14.5, y: 6), CGPoint(x: 18.5, y: 11), CGPoint(x: 10, y: 22), CGPoint(x: 1.5, y: 11)], color: gold)
+            polygon([CGPoint(x: 5.5, y: 6), CGPoint(x: 10, y: 11), CGPoint(x: 1.5, y: 11)], color: highlight)
+            polygon([CGPoint(x: 14.5, y: 6), CGPoint(x: 18.5, y: 11), CGPoint(x: 10, y: 11)], color: highlight)
+            polygon([CGPoint(x: 1.5, y: 11), CGPoint(x: 7, y: 11), CGPoint(x: 10, y: 22)], color: shadow)
+            polygon([CGPoint(x: 13, y: 11), CGPoint(x: 18.5, y: 11), CGPoint(x: 10, y: 22)], color: shadow)
+            polygon([CGPoint(x: 19, y: 1), CGPoint(x: 20.2, y: 4.3), CGPoint(x: 23.5, y: 5), CGPoint(x: 20.2, y: 6.2), CGPoint(x: 19, y: 9.5), CGPoint(x: 17.8, y: 6.2), CGPoint(x: 14.5, y: 5), CGPoint(x: 17.8, y: 4.3)], color: highlight)
+        }.frame(width: 22, height: 22)
+            .accessibilityElement(children: .ignore)
     }
 }
 
@@ -97,6 +156,9 @@ struct SiteFeatureView: View {
         if !forceWebsite && path == "/collections" { CollectionsView() }
         else if !forceWebsite && path == "/schedule" { ScheduleView() }
         else if !forceWebsite && path == "/home" { CommunityView() }
+        else if !forceWebsite && path == "/season" { SeasonsView() }
+        else if !forceWebsite && path == "/genres" { GenresView() }
+        else if !forceWebsite && path == "/announcements" { AnnouncementsView() }
         else { websiteBody }
     }
     private var websiteBody: some View {

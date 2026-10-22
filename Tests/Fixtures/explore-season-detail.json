@@ -1,0 +1,244 @@
+{
+  "season": {
+    "id": 7265,
+    "year": 2026,
+    "season": "fall"
+  },
+  "items": [
+    {
+      "id": 2880,
+      "media_type": "anime",
+      "mal_id": 61987,
+      "title": "Kusuriya no Hitorigoto 3rd Season",
+      "title_english": "The Apothecary Diaries Season 3",
+      "title_japanese": "薬屋のひとりごと 第3期",
+      "title_synonyms": [
+        "The Pharmacist's Monologue",
+        "Drugstore Soliloquy"
+      ],
+      "synopsis": "In the aftermath of the Shi Clan's rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district. One day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature. Meanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\" To make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again. From the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n\n(Source: Crunchyroll)",
+      "image_url": "https://cdn.myanimelist.net/images/anime/1949/159521l.webp",
+      "banner_image_url": null,
+      "score": 8.66,
+      "rank": 87,
+      "popularity": 1384,
+      "status": "Currently Airing",
+      "type": "TV",
+      "episodes": 12,
+      "chapters": 0,
+      "volumes": 0,
+      "start_date": "2026-10-02",
+      "end_date": null,
+      "season": "fall",
+      "year": 2026,
+      "age_rating": "PG-13 - Teens 13 or older",
+      "rating": "PG-13 - Teens 13 or older",
+      "asunatracks_score": {
+        "score": null,
+        "score_10": null,
+        "rating": null,
+        "count": 0
+      },
+      "genres": [
+        {
+          "id": 3,
+          "mal_id": 8,
+          "name": "Drama",
+          "kind": "genre"
+        },
+        {
+          "id": 241,
+          "mal_id": 7,
+          "name": "Mystery",
+          "kind": "genre"
+        },
+        {
+          "id": 122,
+          "mal_id": 13,
+          "name": "Historical",
+          "kind": "theme"
+        },
+        {
+          "id": 3768,
+          "mal_id": 67,
+          "name": "Medical",
+          "kind": "theme"
+        }
+      ]
+    },
+    {
+      "id": 8404,
+      "media_type": "anime",
+      "mal_id": 61967,
+      "title": "Black Clover 2nd Season",
+      "title_english": "Black Clover Season 2",
+      "title_japanese": "ブラッククローバー 2nd season",
+      "title_synonyms": [],
+      "synopsis": "Second season of Black Clover.",
+      "image_url": "https://cdn.myanimelist.net/images/anime/1602/158830l.webp",
+      "banner_image_url": null,
+      "score": 8.81,
+      "rank": 39,
+      "popularity": 1733,
+      "status": "Currently Airing",
+      "type": "TV",
+      "episodes": 0,
+      "chapters": 0,
+      "volumes": 0,
+      "start_date": "2026-10-03",
+      "end_date": null,
+      "season": "fall",
+      "year": 2026,
+      "age_rating": "PG-13 - Teens 13 or older",
+      "rating": "PG-13 - Teens 13 or older",
+      "asunatracks_score": {
+        "score": null,
+        "score_10": null,
+        "rating": null,
+        "count": 0
+      },
+      "genres": [
+        {
+          "id": 18,
+          "mal_id": 27,
+          "name": "Shounen",
+          "kind": "demographic"
+        },
+        {
+          "id": 13,
+          "mal_id": 1,
+          "name": "Action",
+          "kind": "genre"
+        },
+        {
+          "id": 1,
+          "mal_id": 10,
+          "name": "Fantasy",
+          "kind": "genre"
+        }
+      ]
+    },
+    {
+      "id": 8953,
+      "media_type": "anime",
+      "mal_id": 61990,
+      "title": "Cyberpunk: Edgerunners 2",
+      "title_english": "Cyberpunk: Edgerunners 2",
+      "title_japanese": "サイバーパンク エッジランナーズ2",
+      "title_synonyms": [
+        "Cyberpunk Edgerunners 2"
+      ],
+      "synopsis": "Sequel to  Cyberpunk: Edgerunners.",
+      "image_url": "https://cdn.myanimelist.net/images/anime/1880/158764l.webp",
+      "banner_image_url": null,
+      "score": 8.4,
+      "rank": 232,
+      "popularity": 1813,
+      "status": "Finished Airing",
+      "type": "ONA",
+      "episodes": 10,
+      "chapters": 0,
+      "volumes": 0,
+      "start_date": "2026-10-20",
+      "end_date": null,
+      "season": "fall",
+      "year": 2026,
+      "age_rating": "R - 17+ (violence & profanity)",
+      "rating": "R - 17+ (violence & profanity)",
+      "asunatracks_score": {
+        "score": null,
+        "score_10": null,
+        "rating": null,
+        "count": 0
+      },
+      "genres": [
+        {
+          "id": 13,
+          "mal_id": 1,
+          "name": "Action",
+          "kind": "genre"
+        },
+        {
+          "id": 227,
+          "mal_id": 24,
+          "name": "Sci-Fi",
+          "kind": "genre"
+        },
+        {
+          "id": 55,
+          "mal_id": 58,
+          "name": "Gore",
+          "kind": "theme"
+        }
+      ]
+    },
+    {
+      "id": 13050,
+      "media_type": "anime",
+      "mal_id": 53913,
+      "title": "Tensei shitara Ken deshita II",
+      "title_english": "Reincarnated as a Sword Season 2",
+      "title_japanese": "転生したら剣でした II",
+      "title_synonyms": [
+        "I became the sword by transmigrating 2nd Season",
+        "TenKen 2",
+        "I became the sword by transmigrating 2nd Season, TenKen 2"
+      ],
+      "synopsis": "Second season of Tensei shitara Ken deshita.",
+      "image_url": "https://cdn.myanimelist.net/images/anime/1539/159559l.webp",
+      "banner_image_url": null,
+      "score": 7.56,
+      "rank": 1973,
+      "popularity": 2279,
+      "status": "Currently Airing",
+      "type": "TV",
+      "episodes": 12,
+      "chapters": 0,
+      "volumes": 0,
+      "start_date": "2026-10-08",
+      "end_date": null,
+      "season": "fall",
+      "year": 2026,
+      "age_rating": "PG-13 - Teens 13 or older",
+      "rating": "PG-13 - Teens 13 or older",
+      "asunatracks_score": {
+        "score": null,
+        "score_10": null,
+        "rating": null,
+        "count": 0
+      },
+      "genres": [
+        {
+          "id": 13,
+          "mal_id": 1,
+          "name": "Action",
+          "kind": "genre"
+        },
+        {
+          "id": 20,
+          "mal_id": 2,
+          "name": "Adventure",
+          "kind": "genre"
+        },
+        {
+          "id": 1,
+          "mal_id": 10,
+          "name": "Fantasy",
+          "kind": "genre"
+        },
+        {
+          "id": 6,
+          "mal_id": 62,
+          "name": "Isekai",
+          "kind": "theme"
+        },
+        {
+          "id": 17,
+          "mal_id": 72,
+          "name": "Reincarnation",
+          "kind": "theme"
+        }
+      ]
+    }
+  ]
+}

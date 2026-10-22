@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": 12,
+      "title": "Top pages and Announcements are live",
+      "body": "Added a Top page with Score, Popular, Favorites, Tracked, Airing, and Upcoming tabs. Announcements are now live too, and mods/admins can post site updates here.",
+      "category": "feature",
+      "pinned": true,
+      "staff_only": false,
+      "created_at": "2026-05-14T01:05:49+00:00",
+      "updated_at": null,
+      "author": null
+    },
+    {
+      "id": 184,
+      "title": "A smoother mobile experience",
+      "body": "The installed AsunaTracks home-screen app now supports pull-to-refresh across site pages. At the top of a page, drag down until ‘Release to refresh’ appears, then let go. You can start from page content, links or the background of a form. Input fields, menus, video controls and horizontal carousels keep their normal gestures. Pulling back or cancelling the gesture cancels the refresh.\n\nExplore now fits within the space below the topbar, including on shorter phone screens, and scrolls inside its own menu.\n\nThe Status control sits beside the logo on phones and beside the branding on larger screens. Its placement adapts to the screen width.\n\nIn the account popup, your profile picture, display name and username now open your profile directly.\n\nReopen the home-screen app to load the latest update.",
+      "category": "update",
+      "pinned": false,
+      "staff_only": false,
+      "created_at": "2026-10-16T00:21:59+00:00",
+      "updated_at": null,
+      "author": null
+    },
+    {
+      "id": 183,
+      "title": "Share your activity on Discord",
+      "body": "You can now share your AsunaTracks activity on your Discord profile. Open Account Settings → Discord activity and choose Connect Discord sharing. This is a separate connection from signing in with Discord.\n\nFresh playback reports from a connected app or video player can show the anime title, episode, cover and playback timer. Paused playback stays visible while the player keeps sending updates, with the timer frozen. Playback clears after about two minutes without fresh updates, and private playback stays hidden.\n\nYou can also enable ‘Show the AsunaTracks page I am browsing.’ Fresh playback takes priority; otherwise Discord can show the page you are viewing, such as Discover, a title, a profile, Settings or Messages. Page sharing expires without fresh updates and briefly remains visible when you switch apps. Private profiles show ‘Private Profile.’ Search text, message contents and account details are never included.\n\nActivity can include View profile and View page buttons. Private destinations do not get a page link. Discord shows these buttons to other people viewing your profile, rather than on your own profile view.\n\nPause or disconnect sharing at any time in Account Settings.\n\nSet it up: https://asunatracks.space/settings#discord-sharing",
+      "category": "feature",
+      "pinned": false,
+      "staff_only": false,
+      "created_at": "2026-10-16T00:21:59+00:00",
+      "updated_at": null,
+      "author": null
+    }
+  ]
+}

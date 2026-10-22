@@ -7,6 +7,15 @@ enum ModelContractTests {
         func fixture<T: Decodable>(_ name: String, _: T.Type) throws -> T {
             try Coding.decoder.decode(T.self, from: Data(contentsOf: fixtures.appendingPathComponent(name)))
         }
+        let seasons = try fixture("explore-seasons.json", SeasonPage.self)
+        precondition(seasons.items.first?.title == "Fall 2026" && seasons.items.first?.animeCount == 65)
+        let seasonTitles = try fixture("explore-season-detail.json", MediaPage.self)
+        precondition(seasonTitles.items.count == 4 && seasonTitles.items.allSatisfy { $0.mediaType == "anime" })
+        let publicGenres = try fixture("explore-genres.json", PublicGenrePage.self)
+        precondition(publicGenres.items.first?.kind == "demographic" && publicGenres.items.first?.id == 257)
+        let announcements = try fixture("explore-announcements.json", AnnouncementPage.self)
+        precondition(announcements.items.first?.pinned == true && announcements.items.count == 3)
+        precondition(announcements.items.last?.body.contains("Discord") == true)
         let page = try fixture("search.json", MediaPage.self)
         precondition(page.items.count == 2)
         let episodePage = try fixture("media-episodes.json", EpisodePage.self)
@@ -21,6 +30,9 @@ enum ModelContractTests {
         precondition(!cast.items.isEmpty && cast.items.first?.voiceActors?.isEmpty == false)
         let people = try fixture("community-users.json", PublicUserPage.self)
         precondition(people.items.count == 4 && people.items.first?.username == "sample-user-2")
+        let conversation = try fixture("community-conversation.json", CommunityPostResponse.self).item
+        precondition(conversation.comments?.count == 1 && conversation.comments?.first?.likeCount == 1)
+        precondition(conversation.userLiked == false && conversation.comments?.first?.userLiked == false)
         let activity = try fixture("community-activity.json", ActivityPage.self)
         precondition(activity.hasNext == true && activity.items.first?.attachment?.url != nil)
         let profile = try fixture("profile-native.json", ProfileResponse.self)
@@ -46,6 +58,10 @@ enum ModelContractTests {
         precondition(schedule.items.count == 3 && schedule.items.allSatisfy { $0.date != nil })
         precondition(schedule.items.first?.media?.mediaType == "anime")
         precondition(Set(schedule.items.map(\.identity)).count == schedule.items.count)
+        let sponsoredMod = try Coding.decoder.decode(UserResponse.self, from: Data(#"{"user":{"id":99,"username":"badge-test","role":"mod","is_sponsor":true}}"#.utf8)).user!
+        precondition(sponsoredMod.role == "mod" && sponsoredMod.isSponsor == true, "Sponsorship is independent of staff role")
+        let plainUser = try Coding.decoder.decode(UserResponse.self, from: Data(#"{"user":{"id":98,"username":"plain-user"}}"#.utf8)).user!
+        precondition(plainUser.isSponsor == nil && plainUser.role == nil)
         let profileUser = try Coding.decoder.decode(UserResponse.self, from: Data(#"{"user":{"id":42,"username":"profile-test","display_name":"Profile Test","avatar_url":"/avatar/test.png","banner_url":"/banner/test.jpg","bio":"My stories","role":"user"}}"#.utf8)).user!
         precondition(profileUser.avatarUrl == "/avatar/test.png" && profileUser.bannerUrl == "/banner/test.jpg")
         precondition(profileUser.bio == "My stories" && profileUser.displayName == "Profile Test")

@@ -1,4 +1,5 @@
 import SwiftUI
+import ImageIO
 
 /// Shared branded loading state. The logo is bundled so loading never depends on another request.
 struct AsunaLoadingView: View {
@@ -44,6 +45,7 @@ struct AsunaArtwork: View {
     let path: String?
     var accent: Color = .pink
     var fallbackPaths: [String] = []
+    var animateLoading = true
     @State private var attempt = 0
     @State private var candidate = 0
     private var candidates: [URL] {
@@ -63,28 +65,37 @@ struct AsunaArtwork: View {
     private var url: URL? { candidates.indices.contains(candidate) ? candidates[candidate] : nil }
     var body: some View {
         GeometryReader { geometry in
-            AsyncImage(url: url) { phase in
-                if let image = phase.image {
-                    image.resizable().scaledToFill()
-                        .frame(width: geometry.size.width, height: geometry.size.height)
-                        .clipped().accessibilityHidden(true)
-                }
-                else if phase.error != nil {
-                    Button { candidate = 0; attempt += 1 } label: {
-                        Image(systemName: "arrow.clockwise").foregroundStyle(accent)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    }.buttonStyle(.plain).accessibilityLabel("Retry artwork")
-                        .task {
-                            if candidate + 1 < candidates.count { candidate += 1; attempt += 1 }
+            if let url, ["gif", "apng"].contains(url.pathExtension.lowercased()) {
+                AnimatedArtwork(url: url, accent: accent)
+            } else {
+                AsyncImage(url: url) { phase in
+                    if let image = phase.image {
+                        image.resizable().scaledToFill()
+                            .frame(width: geometry.size.width, height: geometry.size.height)
+                            .clipped().accessibilityHidden(true)
+                    }
+                    else if phase.error != nil {
+                        Button { candidate = 0; attempt += 1 } label: {
+                            Image(systemName: "arrow.clockwise").foregroundStyle(accent)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        }.buttonStyle(.plain).accessibilityLabel("Retry artwork")
+                            .task {
+                                if candidate + 1 < candidates.count { candidate += 1; attempt += 1 }
+                            }
+                    } else if url != nil {
+                        if animateLoading {
+                            AsunaLoadingView(title: "Loading artwork…", accent: accent, compact: true)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        } else {
+                            Image.asunaLogo.resizable().scaledToFit().padding(4)
+                                .opacity(0.35).accessibilityLabel("Loading profile picture")
                         }
-                } else if url != nil {
-                    AsunaLoadingView(title: "Loading artwork…", accent: accent, compact: true)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else {
-                    Image.asunaLogo.resizable().scaledToFit().padding(12)
-                        .opacity(0.35).accessibilityLabel("No artwork available")
-                }
-            }.id(attempt).frame(width: geometry.size.width, height: geometry.size.height).clipped()
+                    } else {
+                        Image.asunaLogo.resizable().scaledToFit().padding(12)
+                            .opacity(0.35).accessibilityLabel("No artwork available")
+                    }
+                }.id(attempt).frame(width: geometry.size.width, height: geometry.size.height).clipped()
+            }
         }.background(accent.opacity(0.06)).onChange(of: path) { _, _ in candidate = 0; attempt = 0 }
     }
 }
@@ -117,5 +128,101 @@ extension Image {
         #else
         return Image("AsunaTracksLogo")
         #endif
+    }
+}
+
+
+/// ImageIO preserves GIF frame delays; decoding and bounded caching stay off the UI actor.
+nonisolated private final class AnimatedArtworkFrames: @unchecked Sendable {
+    let images: [CGImage]
+    let frameEnds: [Double]
+    let duration: Double
+    let cost: Int
+    init(images: [CGImage], frameEnds: [Double], cost: Int) {
+        self.images = images; self.frameEnds = frameEnds
+        duration = frameEnds.last ?? 0.1; self.cost = cost
+    }
+}
+private actor AnimatedArtworkCache {
+    static let shared = AnimatedArtworkCache()
+    private let cache: NSCache<NSString, AnimatedArtworkFrames> = {
+        let cache = NSCache<NSString, AnimatedArtworkFrames>(); cache.totalCostLimit = 96 * 1024 * 1024; return cache
+    }()
+    private var pending: [URL: Task<AnimatedArtworkFrames, Error>] = [:]
+    func frames(for url: URL) async throws -> AnimatedArtworkFrames {
+        if let frames = cache.object(forKey: url.absoluteString as NSString) { return frames }
+        if let task = pending[url] { return try await task.value }
+        let task = Task { try await Self.decode(url) }
+        pending[url] = task
+        defer { pending[url] = nil }
+        let frames = try await task.value
+        cache.setObject(frames, forKey: url.absoluteString as NSString, cost: frames.cost)
+        return frames
+    }
+    private static func decode(_ url: URL) async throws -> AnimatedArtworkFrames {
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let http = response as? HTTPURLResponse, (200..<300).contains(http.statusCode),
+              data.count <= 24 * 1024 * 1024,
+              let source = CGImageSourceCreateWithData(data as CFData, nil) else { throw URLError(.cannotDecodeContentData) }
+        let count = CGImageSourceGetCount(source)
+        guard count > 0 && count <= 600 else { throw URLError(.cannotDecodeContentData) }
+        // Bound decoded memory per animation, including large animated profile banners.
+        let pixels = min(900, max(64, Int(sqrt(Double(32 * 1024 * 1024 / 4 / count)))))
+        var images: [CGImage] = [], ends: [Double] = [], duration = 0.0, cost = 0
+        for index in 0..<count {
+            try Task.checkCancellation()
+            let image: CGImage? = autoreleasepool {
+                CGImageSourceCreateThumbnailAtIndex(source, index, [
+                    kCGImageSourceCreateThumbnailFromImageAlways: true,
+                    kCGImageSourceThumbnailMaxPixelSize: pixels,
+                    kCGImageSourceCreateThumbnailWithTransform: true
+                ] as CFDictionary)
+            }
+            guard let image else { throw URLError(.cannotDecodeContentData) }
+            let properties = CGImageSourceCopyPropertiesAtIndex(source, index, nil) as? [CFString: Any]
+            let gif = properties?[kCGImagePropertyGIFDictionary] as? [CFString: Any]
+            let png = properties?[kCGImagePropertyPNGDictionary] as? [CFString: Any]
+            let delay = (gif?[kCGImagePropertyGIFUnclampedDelayTime] as? Double)
+                ?? (gif?[kCGImagePropertyGIFDelayTime] as? Double)
+                ?? (png?[kCGImagePropertyAPNGUnclampedDelayTime] as? Double)
+                ?? (png?[kCGImagePropertyAPNGDelayTime] as? Double) ?? 0.1
+            duration += delay < 0.02 ? 0.1 : delay
+            images.append(image); ends.append(duration); cost += image.bytesPerRow * image.height
+        }
+        return AnimatedArtworkFrames(images: images, frameEnds: ends, cost: cost)
+    }
+}
+private struct AnimatedArtwork: View {
+    let url: URL
+    let accent: Color
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.isLuminanceReduced) private var luminanceReduced
+    @State private var frames: AnimatedArtworkFrames?
+    @State private var started = Date()
+    @State private var failed = false
+    @State private var attempt = 0
+    var body: some View {
+        GeometryReader { geometry in
+            if let frames {
+                TimelineView(.animation(minimumInterval: 1 / 30, paused: reduceMotion || luminanceReduced || frames.images.count == 1)) { context in
+                    let time = max(0, context.date.timeIntervalSince(started)).truncatingRemainder(dividingBy: frames.duration)
+                    let index = reduceMotion || luminanceReduced ? 0 : (frames.frameEnds.firstIndex { time < $0 } ?? 0)
+                    Image(decorative: frames.images[index], scale: 1).resizable().scaledToFill()
+                        .frame(width: geometry.size.width, height: geometry.size.height).clipped()
+                }
+            } else if failed {
+                Button { attempt += 1 } label: {
+                    Image(systemName: "arrow.clockwise").foregroundStyle(accent).frame(maxWidth: .infinity, maxHeight: .infinity)
+                }.buttonStyle(.plain).accessibilityLabel("Retry animated image")
+            } else {
+                Image.asunaLogo.resizable().scaledToFit().padding(4).opacity(0.35)
+            }
+        }.clipped().task(id: "\(url.absoluteString):\(attempt)") {
+            frames = nil; failed = false
+            do {
+                let loaded = try await AnimatedArtworkCache.shared.frames(for: url)
+                try Task.checkCancellation(); started = Date(); frames = loaded
+            } catch { if !Task.isCancelled { failed = true } }
+        }
     }
 }

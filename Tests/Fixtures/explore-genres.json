@@ -1,0 +1,37 @@
+{
+  "type": "anime",
+  "items": [
+    {
+      "id": 257,
+      "media_type": "anime",
+      "mal_id": 43,
+      "name": "Josei",
+      "kind": "demographic",
+      "count": null
+    },
+    {
+      "id": 7229,
+      "media_type": "anime",
+      "mal_id": 15,
+      "name": "Kids",
+      "kind": "demographic",
+      "count": null
+    },
+    {
+      "id": 2,
+      "media_type": "anime",
+      "mal_id": 42,
+      "name": "Seinen",
+      "kind": "demographic",
+      "count": null
+    },
+    {
+      "id": 3823,
+      "media_type": "anime",
+      "mal_id": 25,
+      "name": "Shoujo",
+      "kind": "demographic",
+      "count": null
+    }
+  ]
+}
