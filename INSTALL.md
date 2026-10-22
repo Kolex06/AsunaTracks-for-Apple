@@ -19,6 +19,14 @@ The supported installation route today is Xcode on a Mac:
 
 A free Personal Team can install development builds on its own devices, subject to Apple's limitations and short-lived signing. Some capabilities require a paid membership. Rebuilding from Xcode renews the development installation.
 
+## Building from source: choose the Xcode project
+
+Open **AsunaTracks.xcodeproj**, not `Package.swift` or the downloaded folder. Use Xcode 27+ with the matching Apple SDKs. Select **AsunaTracksMac → My Mac** for Mac, **AsunaTracks → your iPhone/iPad** for mobile, or **AsunaTracksWatch → your Watch**. The apps require OS 26 or newer; lowering the deployment target does not add compatibility with older systems.
+
+`Package.swift` is an optional Mac-only executable build without widgets. In Terminal, use `swift build`; it is not the installation route for iPhone, iPad, or Watch.
+
+If Xcode reports `Invalid redeclaration` of `asunaGlassButtonStyle`, `asunaProminentButtonStyle`, or `AsunaGlassContainer`, start with a fresh source ZIP in a new folder and open its `.xcodeproj`. Those compatibility helpers are not part of the official source; adding copies to several files creates duplicate declarations. Keep your existing folder until any local changes are preserved. After switching to the correct project, use Product → Clean Build Folder if diagnostics from the previous build remain.
+
 ## Apple Watch
 
 Use the same Xcode project, select **AsunaTracksWatch**, choose your paired Watch, enable Watch Developer Mode, and Run. The Watch app keeps its own sign-in and talks directly to AsunaTracks; your iPhone app can stay closed. Internet access is still required to update the list.
