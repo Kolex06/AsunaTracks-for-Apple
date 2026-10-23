@@ -34,6 +34,9 @@ for filename, (platform, count) in archives.items():
         if platform == 'iPhoneOS':
             app = plistlib.loads(archive.read('Payload/AsunaTracks.app/Info.plist'))
             assert set(app['UIDeviceFamily']) == {1, 2}, 'IPA must support both iPhone and iPad'
+            watch = plistlib.loads(archive.read('Payload/AsunaTracks.app/Watch/AsunaTracksWatch.app/Info.plist'))
+            assert watch['WKCompanionAppBundleIdentifier'] == app['CFBundleIdentifier'], 'Watch companion ID must match the iPhone app'
+            assert watch['CFBundleIdentifier'].startswith(app['CFBundleIdentifier'] + '.'), 'Watch bundle ID must be nested under the iPhone ID'
     manifest['artifacts'].append({'name': filename, 'sha256': hashlib.sha256(artifact.read_bytes()).hexdigest(), 'bundles': bundles})
     print('Verified', filename, len(bundles), 'bundles, build', expected_build)
 (folder / 'BUILD_MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
+python3 script/configure_signing.py --check
 MODE="${1:-run}"
 APP_NAME="AsunaTracksMac"
 # Stage outside Documents: File Provider can attach signing-incompatible Finder metadata.

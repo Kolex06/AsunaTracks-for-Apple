@@ -49,7 +49,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
 				"SUPPORTED_PLATFORMS" = "macosx";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).mac.widgets";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
@@ -166,10 +166,10 @@
 				"MARKETING_VERSION" = "1.0";
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).watchkitapp";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
-				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
+				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "$(ASUNATRACKS_APP_BUNDLE_ID)";
 				"INFOPLIST_KEY_CFBundleVersion" = "5";
 				"TARGETED_DEVICE_FAMILY" = "4";
 				"INFOPLIST_KEY_CFBundleShortVersionString" = "1.0";
@@ -197,7 +197,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"EXECUTABLE_NAME" = "AsunaTracksMac";
 				"SUPPORTED_PLATFORMS" = "macosx";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).mac";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
@@ -268,7 +268,7 @@
 				"SWIFT_VERSION" = "5.0";
 				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
 				"CURRENT_PROJECT_VERSION" = "7";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).watchkitapp.widgets";
 			};
 		};
 		"8AD2DB74AAD5C51F0D932250" = {
@@ -394,7 +394,7 @@
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
 				"CURRENT_PROJECT_VERSION" = "7";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).widgets";
 			};
 		};
 		"E7099109BA730C79E75AF4AA" = {
@@ -464,6 +464,7 @@
 		"73EBF6644258C120893E685D" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
+				"ASUNATRACKS_APP_BUNDLE_ID" = "space.asunatracks.apple";
 				"CLANG_ENABLE_MODULES" = "YES";
 				"SWIFT_STRICT_CONCURRENCY" = "targeted";
 			};
@@ -492,11 +493,11 @@
 				"MARKETING_VERSION" = "1.0";
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).watchkitapp";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
-				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "space.asunatracks.apple";
+				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier" = "$(ASUNATRACKS_APP_BUNDLE_ID)";
 				"DEBUG_INFORMATION_FORMAT" = "dwarf";
 				"TARGETED_DEVICE_FAMILY" = "4";
 				"INFOPLIST_KEY_CFBundleShortVersionString" = "1.0";
@@ -538,7 +539,7 @@
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "26.0";
 				"CURRENT_PROJECT_VERSION" = "7";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).widgets";
 			};
 		};
 		"43A8F369DEFE76C95BC3BA3B" = {
@@ -597,6 +598,7 @@
 		"0B0C687DF8B6B8DC790B519C" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
+				"ASUNATRACKS_APP_BUNDLE_ID" = "space.asunatracks.apple";
 				"CLANG_ENABLE_MODULES" = "YES";
 				"SWIFT_STRICT_CONCURRENCY" = "targeted";
 			};
@@ -653,7 +655,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"EXECUTABLE_NAME" = "AsunaTracksMacWidgets";
 				"SUPPORTED_PLATFORMS" = "macosx";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac.widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).mac.widgets";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
@@ -848,7 +850,7 @@
 				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID)";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
@@ -979,7 +981,7 @@
 				"INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID)";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"INFOPLIST_KEY_CFBundleDisplayName" = "AsunaTracks";
 				"INFOPLIST_KEY_UILaunchScreen_Generation" = "YES";
@@ -1344,7 +1346,7 @@
 				"DEVELOPMENT_TEAM" = "B6NP2879G2";
 				"EXECUTABLE_NAME" = "AsunaTracksMac";
 				"SUPPORTED_PLATFORMS" = "macosx";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.mac";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).mac";
 				"CURRENT_PROJECT_VERSION" = "7";
 				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
 				"MACOSX_DEPLOYMENT_TARGET" = "26.0";
@@ -1534,7 +1536,7 @@
 				"SWIFT_VERSION" = "5.0";
 				"WATCHOS_DEPLOYMENT_TARGET" = "26.0";
 				"CURRENT_PROJECT_VERSION" = "7";
-				"PRODUCT_BUNDLE_IDENTIFIER" = "space.asunatracks.apple.watchkitapp.widgets";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(ASUNATRACKS_APP_BUNDLE_ID).watchkitapp.widgets";
 			};
 		};
 		"2115071FA65B9D3CF84426D0" = {

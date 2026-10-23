@@ -14,8 +14,23 @@ The supported installation route today is Xcode on a Mac:
 
 1. Download this repository's source ZIP and open `AsunaTracks.xcodeproj` in Xcode 27 or newer.
 2. Sign in to Xcode Settings → Accounts with your Apple Account.
-3. In Signing & Capabilities, choose your team for all app and widget targets. Use your own bundle identifiers, app groups, and matching Keychain group where required; do not reuse the publisher's signing team.
+3. In Terminal, change to the downloaded source folder and run the setup helper below with **your own** team ID and unique bundle ID. Then choose that team in Xcode for the app and extension targets.
 4. Connect and trust your iPhone/iPad, enable Developer Mode, select the **AsunaTracks** scheme and your device, then Run.
+
+### Configure your signing settings together
+
+Find your team ID in Xcode's signing settings or your Apple Developer account. Replace `YOURTEAMID` and `com.example.asunatracks` with your own values:
+
+```sh
+python3 script/configure_signing.py --team YOURTEAMID --bundle-id com.example.asunatracks
+python3 script/configure_signing.py --check
+```
+
+The helper updates both build configurations, all six targets, App Group entitlements, the runtime widget cache and shared session groups. It checks for conflicting manual target overrides before writing anything, and prints the groups to provision. It is safe to rerun with the same settings. Review the changes with `git diff` when working in a Git checkout.
+
+**Apple still needs to allow those capabilities for your team.** Enable the printed App Groups for the corresponding app and widget identifiers in your developer account/Signing & Capabilities, and let Xcode generate matching profiles. This helper cannot register identifiers, grant capabilities or remove Personal Team restrictions. It never asks for your Apple password.
+
+Do not change only the team or the main app ID while leaving the original sharing groups in place. If you already customized targets individually and the helper reports conflicting overrides, preserve your local work and use a fresh source download for setup.
 
 A free Personal Team can install development builds on its own devices, subject to Apple's limitations and short-lived signing. Some capabilities require a paid membership. Rebuilding from Xcode renews the development installation.
 
@@ -46,3 +61,19 @@ The Apple Developer Program is US$99 per year, charged in local currency where a
 - [TestFlight overview and build expiry](https://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview/)
 
 No App Store or TestFlight availability is implied by a GitHub release.
+
+## Fix: InvalidCompanionAppBundleIdentifier
+
+This error means the Watch app still names a different iPhone app as its companion. For example, an iPhone ID of `com.example.asunatracks` must have a Watch `WKCompanionAppBundleIdentifier` of exactly `com.example.asunatracks`.
+
+For an existing checkout where the iPhone target was renamed manually, set the **AsunaTracksWatch** target's Build Settings → `INFOPLIST_KEY_WKCompanionAppBundleIdentifier` (shown as **WKCompanionAppBundleIdentifier**) to the iPhone target's exact Bundle Identifier, for both Debug and Release. Use matching nested IDs:
+
+| Target / key | Example |
+| --- | --- |
+| AsunaTracks | `com.example.asunatracks` |
+| AsunaTracksWidgets | `com.example.asunatracks.widgets` |
+| AsunaTracksWatch | `com.example.asunatracks.watchkitapp` |
+| Watch companion key | `com.example.asunatracks` |
+| AsunaTracksWatchWidgets | `com.example.asunatracks.watchkitapp.widgets` |
+
+Then use Product → Clean Build Folder and Run again. On a fresh download of the updated project, change only the project-level `ASUNATRACKS_APP_BUNDLE_ID` setting instead of editing each target independently. This fixes identifier matching; signing capabilities must still be configured for the chosen team.

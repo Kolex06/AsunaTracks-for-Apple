@@ -49,7 +49,7 @@ Use **Xcode 27+** and open `AsunaTracks.xcodeproj`.
 | `AsunaTracksWatch` | Apple Watch |
 | `AsunaTracksMac` | Mac and widgets |
 
-Choose your own team for every app/extension target. Update bundle identifiers, app groups, and related identifiers together if needed. The repository includes development identifiers, not signing credentials.
+Use `python3 script/configure_signing.py --team YOURTEAMID --bundle-id your.unique.asunatracks` to configure all targets and runtime sharing groups together. Run it with `--check` to validate the current checkout. The helper sets the project-level `ASUNATRACKS_APP_BUNDLE_ID` for both configurations; keep target Bundle Identifier expressions intact. Apple still needs to provision the printed App Groups and related signing capabilities for your team. See [INSTALL.md](INSTALL.md) for details. The repository includes development identifiers, not signing credentials.
 
 On the configured development Mac, `./script/build_and_run.sh --verify` builds, installs, and opens one copy at `~/Applications/AsunaTracks.app`, unregistering temporary build copies. Debug/log flags are available. `Package.swift` offers a source-only Mac build without widgets.
 

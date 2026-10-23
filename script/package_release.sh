@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
+python3 script/configure_signing.py --check
 VERSION="${1:-1.0.0-beta.3}"
 [[ "$VERSION" =~ ^[a-zA-Z0-9._-]+$ ]] || { echo "Invalid version" >&2; exit 2; }
 OUTPUT="$PWD/dist/$VERSION"
